@@ -1,0 +1,6 @@
+2025-07-08 12:53:32,718 - __main__ - INFO - escritura completada
+2025-07-08 12:53:38,518 - validators - INFO - El archivo de salida 'exchange_ohlcv.csv' ya existe.
+2025-07-08 12:53:38,519 - __main__ - INFO - Archivo ya existe (ABORTANDO)
+2025-07-08 13:02:46,709 - __main__ - INFO - escritura completada
+2025-07-08 13:04:48,109 - validators - INFO - El archivo de salida 'exchange_ohlcv.csv' ya existe.
+2025-07-08 13:04:48,110 - __main__ - INFO - Archivo ya existe (ABORTANDO)
