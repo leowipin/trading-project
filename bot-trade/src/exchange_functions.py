@@ -4,7 +4,7 @@ import logging
 import os
 from datetime import datetime, timezone
 from functools import reduce
-from typing import Any # Necesario para los type hints
+import numpy as np
 
 
 logger = logging.getLogger(__name__)
@@ -53,142 +53,258 @@ def write_to_csv(df_ohlcv:pd.DataFrame, file_name:str) -> None:
         return
     df_ohlcv.to_csv(file_name, index=True)
 
-def calculate_rsi(df:pd.DataFrame, rsi_period: int) -> None:
+# --- 1. FUNCIONES DE CÁLCULO DE INDICADORES ---
+
+def calculate_indicators(df: pd.DataFrame, rsi_period=14, bb_period=20, bb_std_dev=2, atr_period=14) -> None:
+    """Calcula todos los indicadores necesarios de forma vectorizada."""
+    # RSI
     delta = df['Close'].diff(1)
     gain = delta.clip(lower=0)
-    
     loss = -delta.clip(upper=0)
-
+    # Usa ewm (EMA) que es el método estándar para RSI, no SMA.
     avg_gain = gain.ewm(com=rsi_period - 1, min_periods=rsi_period, adjust=False).mean()
     avg_loss = loss.ewm(com=rsi_period - 1, min_periods=rsi_period, adjust=False).mean()
-
     rs = avg_gain / avg_loss
-
     df['RSI'] = 100 - (100 / (1 + rs))
-    
-    df.to_csv("rsi.csv", index=True)
 
-def find_divergences_and_set_signals(df: pd.DataFrame, 
-                                     pivot_lookback_window: int, 
-                                     confirmation_wait_candles: int, 
-                                     min_distance_between_pivots: int,
-                                     volume_search_window: int = 20) -> None:
+    # Bandas de Bollinger
+    df['BB_Mid'] = df['Close'].rolling(window=bb_period).mean()
+    df['BB_Std'] = df['Close'].rolling(window=bb_period).std()
+    df['BB_High'] = df['BB_Mid'] + (df['BB_Std'] * bb_std_dev)
+    df['BB_Low'] = df['BB_Mid'] - (df['BB_Std'] * bb_std_dev)
 
-    # --- Paso 1: Pre-cálculo vectorizado de los candidatos a pivote (muy rápido) ---
-    is_rsi_lookback_min = df['RSI'] == df['RSI'].rolling(
-        window=pivot_lookback_window, 
-        min_periods=pivot_lookback_window).min()
-    
+    # ATR
+    high_low = df['High'] - df['Low']
+    high_close = np.abs(df['High'] - df['Close'].shift())
+    low_close = np.abs(df['Low'] - df['Close'].shift())
+    tr = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1) # type: ignore
+    df['ATR'] = tr.ewm(alpha=1/atr_period, adjust=False).mean()
+
+def find_divergence_signals(df: pd.DataFrame, pivot_lookback_window, confirmation_wait_candles, min_distance_between_pivots):
+    """
+    Función optimizada para PRE-CALCULAR todas las potenciales señales de divergencia.
+    Ahora devuelve el DataFrame modificado.
+    """
+    # Esta es una versión simplificada de tu función anterior. Su único objetivo
+    # es marcar las velas donde una señal de divergencia es VÁLIDA para ser evaluada.
+    is_rsi_lookback_min = df['RSI'] == df['RSI'].rolling(window=pivot_lookback_window).min()
     conditions_list = [df['RSI'] < df['RSI'].shift(-i) for i in range(1, confirmation_wait_candles + 1)]
     is_rsi_forward_confirmed = reduce(lambda a, b: a & b, conditions_list)
-    
     df['rsi_pivot_low'] = is_rsi_lookback_min & is_rsi_forward_confirmed
-
-    # --- Paso 2: Iteración única sobre los pivotes para encontrar divergencias ---
     
     df['bullish_divergence_signal'] = False
-    
     potential_pivot_indices = df.index[df['rsi_pivot_low']]
 
-    # Guard Clause: Salir si no hay suficientes pivotes para formar una divergencia.
     if len(potential_pivot_indices) < 2:
         df.drop('rsi_pivot_low', axis=1, inplace=True)
-        logger.warning("No hay suficientes pivotes para formar una divergencia")
-        return
+        return df
 
-    # Inicialización: El primer pivote se trata por separado para simplificar el bucle.
     last_pivot_idx = potential_pivot_indices[0]
-
-    # El bucle ahora empieza desde el SEGUNDO pivote.
     for i in range(1, len(potential_pivot_indices)):
         current_pivot_idx = potential_pivot_indices[i]
         
-        # Guard Clause: Verificar la distancia mínima.
         distance = df.index.get_loc(current_pivot_idx) - df.index.get_loc(last_pivot_idx) # type: ignore
-        
         if distance < min_distance_between_pivots:
-            # Si un pivote está muy cerca pero tiene un RSI más bajo, se convierte
-            # en el nuevo punto de partida, ya que es un "mínimo más relevante".
             if df.loc[current_pivot_idx, 'RSI'] < df.loc[last_pivot_idx, 'RSI']: # type: ignore
                 last_pivot_idx = current_pivot_idx
             continue
 
-        # Usamos # type: ignore para decirle a Pylance que confíe en nosotros.
-        # Sabemos que 'Close' y 'RSI' son numéricos y comparables.
         price_makes_lower_low = df.loc[current_pivot_idx, 'Close'] < df.loc[last_pivot_idx, 'Close'] # type: ignore
         rsi_makes_higher_low = df.loc[current_pivot_idx, 'RSI'] > df.loc[last_pivot_idx, 'RSI'] # type: ignore
         
-        if not (price_makes_lower_low and rsi_makes_higher_low):
-            # Si no hay divergencia, este pivote se convierte en el nuevo punto de partida y pasamos al siguiente.
-            last_pivot_idx = current_pivot_idx
-            continue
+        if price_makes_lower_low and rsi_makes_higher_low:
+            pivot_pos = df.index.get_loc(current_pivot_idx)
+            signal_pos = pivot_pos + confirmation_wait_candles
+            if signal_pos < len(df.index):
+                signal_idx = df.index[signal_pos]
+                # En lugar de comprobar el volumen aquí, solo marcamos la señal potencial.
+                # La gestión de riesgo se hará en el bucle de simulación.
+                df.loc[signal_idx, 'bullish_divergence_signal'] = True
         
-        # Calculamos la posición de la vela donde la señal sería procesable.
-        pivot_pos = df.index.get_loc(current_pivot_idx)
-        signal_pos = pivot_pos + confirmation_wait_candles # type: ignore
-        
-        # Guard Clause 3: La vela de señal no debe salirse del DataFrame.
-        if signal_pos >= len(df.index):
-            # No podemos confirmar esta señal, así que actualizamos el pivote y continuamos.
-            last_pivot_idx = current_pivot_idx
-            continue
-
-        # #######################################################################
-        # ### INICIO CAMBIO: Implementación del Filtro de Volumen (Filtro 3)   ###
-        # #######################################################################
-        
-        # 1. Definir la ventana de confirmación (velas entre el pivote y la señal)
-        confirmation_window_df = df.iloc[pivot_pos + 1 : signal_pos + 1] # type: ignore
-
-        # 2. Identificar velas alcistas en la ventana de confirmación.
-        green_candles_in_window = confirmation_window_df[confirmation_window_df['Close'] > confirmation_window_df['Open']]
-
-        # 3. Guard Clause 4: Si no hay velas verdes, el filtro de volumen falla.
-        if green_candles_in_window.empty:
-            logger.info(f"Divergencia en {current_pivot_idx} RECHAZADA: Sin velas de confirmación verdes.")
-            last_pivot_idx = current_pivot_idx
-            continue
-
-        # define la ventana en la que se va a buscar basa en volume_search_window por default es 20
-        start_pos = max(0, pivot_pos - volume_search_window) # type: ignore
-        search_df = df.iloc[start_pos:pivot_pos]
-        
-        # 4. Encontrar las velas rojas DENTRO de esta ventana optimizada.
-        red_candles_in_search_window = search_df[search_df['Close'] < search_df['Open']]
-        
-        # 5. Guard Clause 5: Si no hay 5 velas rojas en la ventana de búsqueda, el filtro falla.
-        if len(red_candles_in_search_window) < 5:
-            logger.debug(f"Divergencia en {current_pivot_idx} RECHAZADA: No se encontraron 5 velas rojas en las últimas {volume_search_window} velas.")
-            last_pivot_idx = current_pivot_idx
-            continue
-            
-        # 6. Calcular el promedio usando las ÚLTIMAS 5 velas rojas encontradas en la ventana.
-        avg_red_volume = red_candles_in_search_window.tail(5)['Volume'].mean()
-        volume_threshold = 1.5 * avg_red_volume
-
-        # 6. Comprobar si ALGUNA de las velas verdes supera el umbral. `any()` es más eficiente.
-        volume_spike_found = any(green_candles_in_window['Volume'] > volume_threshold)
-
-        # 7. Guard Clause 6: Si ninguna vela verde supera el umbral, el filtro falla.
-        if not volume_spike_found:
-            logger.info(f"Divergencia en {current_pivot_idx} RECHAZADA por filtro de volumen (Umbral: {volume_threshold:.2f}).")
-            last_pivot_idx = current_pivot_idx
-            continue
-
-        # #######################################################################
-        # ### FIN CAMBIO: Implementación del Filtro de Volumen (Filtro 3)      ###
-        # #######################################################################
-
-        # --- ¡CAMINO FELIZ! ---
-        # Si la ejecución llega a este punto, todas las condiciones y filtros se han cumplido.
-        # El código está limpio y sin anidamiento.
-        signal_idx = df.index[signal_pos]
-        df.loc[signal_idx, 'bullish_divergence_signal'] = True
-        logger.info(f"==> SENIAL DE COMPRA generada en {signal_idx}. "
-            f"Basada en la divergencia del pivote {current_pivot_idx}, confirmada con volumen.")
-        
-        # El pivote actual siempre se convierte en el nuevo punto de referencia.
         last_pivot_idx = current_pivot_idx
+        
+    df.drop('rsi_pivot_low', axis=1, inplace=True)
+    return df
 
-    df.to_csv("pivotes.csv", index=True)
+# --- 2. BUCLE PRINCIPAL DE SIMULACIÓN ---
+
+def run_simulation(
+        df: pd.DataFrame,
+        initial_capital,
+        fee_rate,
+        risk_per_trade_pct,
+        rr_min_ratio,
+        max_candles_open,
+        confirmation_wait_candles,
+        volume_search_window):
+    """
+    Recorre el DataFrame vela a vela, gestionando operaciones y capital.
+    """
+    capital = initial_capital
+    in_trade = False
+    active_trade = {}
+    trade_log = []
+
+    logger.info(f"Iniciando simulacion con Capital: ${capital:,.2f}")
+
+    # Iteramos por cada vela del DataFrame
+    for i in range(len(df)):
+        current_row = df.iloc[i]
+        current_price = current_row['Close']
+        current_date = df.index[i].date()
+
+        # --- A. GESTIÓN DE LA OPERACIÓN ACTIVA ---
+        if in_trade:
+            # Comprobar Stop Loss
+            if current_row['Low'] <= active_trade['sl_price']:
+                exit_price = active_trade['sl_price']
+                capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
+                trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'SL'})
+                logger.warning(f"CIERRE por SL en {current_date}: Capital final ${capital:,.2f}")
+                in_trade = False
+                active_trade = {}
+                continue
+
+            # Comprobar Fase 2: Take Profit 2
+            if active_trade.get('is_phase_2') and current_row['High'] >= active_trade['tp2_price']:
+                exit_price = active_trade['tp2_price']
+                capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
+                trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'TP2'})
+                logger.info(f"CIERRE por TP2 en {current_date}: Capital final ${capital:,.2f}")
+                in_trade = False
+                active_trade = {}
+                continue
+
+            # Comprobar Fase 1: Take Profit 1
+            if not active_trade.get('is_phase_2') and current_row['High'] >= active_trade['tp1_price']:
+                # Vender 50% de la posición
+                exit_price_tp1 = active_trade['tp1_price']
+                half_position = active_trade['position_size'] / 2
+                capital += half_position * exit_price_tp1 * (1 - fee_rate)
+                
+                # Actualizar la operación a Fase 2
+                active_trade['position_size'] = half_position
+                active_trade['is_phase_2'] = True
+                sl_breakeven = (active_trade['entry_price'] * (1 + fee_rate)) / (1 - fee_rate)
+                active_trade['sl_price'] = sl_breakeven
+                active_trade['tp2_price'] = current_row['BB_High'] # Objetivo dinámico
+
+                logger.info(f"ALCANZADO TP1 en {current_date}: SL movido a breakeven (${sl_breakeven:.2f})")
+
+            # Comprobar Time Stop
+            if i - active_trade['entry_index'] >= max_candles_open:
+                exit_price = current_price
+                capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
+                trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'Time Stop'})
+                logger.warning(f"CIERRE por Time Stop en {current_date}: Capital final ${capital:,.2f}")
+                in_trade = False
+                active_trade = {}
+                continue
+
+        # --- B. busqueda DE NUEVAS ENTRADAS ---
+        if not in_trade and current_row['bullish_divergence_signal']:
+            
+            # #######################################################################
+            # ### INICIO CORRECCIÓN: Filtro de Volumen Reincorporado              ###
+            # #######################################################################
+            
+            # La señal en 'i' confirma un pivote que ocurrió 'confirmation_wait_candles' atrás.
+            pivot_pos = i - confirmation_wait_candles
+            if pivot_pos < 0: continue # Seguridad para el inicio del dataframe
+            
+            # 1. Ventana de confirmación: las velas entre el pivote y la señal.
+            confirmation_window = df.iloc[pivot_pos + 1 : i + 1]
+            green_candles = confirmation_window[confirmation_window['Close'] > confirmation_window['Open']]
+
+            # 2. Guard Clause: Si no hay velas verdes, el filtro falla.
+            if green_candles.empty:
+                logger.warning(f"Senial en {current_date} RECHAZADA: Sin vela verde de confirmación.")
+                continue
+
+            # 3. Ventana de busqueda eficiente para las velas rojas ANTERIORES al pivote.
+            start_pos = max(0, pivot_pos - volume_search_window)
+            search_df = df.iloc[start_pos:pivot_pos]
+            red_candles = search_df[search_df['Close'] < search_df['Open']]
+
+            # 4. Guard Clause: Si no hay 5 velas rojas para el promedio, el filtro falla.
+            if len(red_candles) < 5:
+                logger.warning(f"Senial en {current_date} RECHAZADA: No se encontraron 5 velas rojas en la ventana de busqueda.")
+                continue
+            
+            # 5. Calcular umbral y comprobar si se supera.
+            avg_red_volume = red_candles.tail(5)['Volume'].mean()
+            volume_threshold = 1.5 * avg_red_volume
+            volume_spike_found = any(green_candles['Volume'] > volume_threshold)
+
+            # 6. Guard Clause: Si no hay pico de volumen, el filtro falla.
+            if not volume_spike_found:
+                logger.warning(f"Senial en {current_date} RECHAZADA por filtro de volumen (Umbral: {volume_threshold:.2f}).")
+                continue
+            
+            logger.info(f"Senial en {current_date} SUPERO filtro de volumen. Evaluando R/R...")
+            # #######################################################################
+            # ### FIN CORRECCIÓN: Filtro de Volumen Reincorporado                 ###
+            # #######################################################################
+            
+            # Filtro de Calidad (Ratio Riesgo/Beneficio)
+            precio_entrada = current_price
+            precio_sl_teorico = current_row['Low'] - current_row['ATR']
+            precio_tp1_teorico = current_row['BB_Mid']
+
+            # Cálculos con comisiones
+            costo_total_entrada = precio_entrada * (1 + fee_rate)
+            ingreso_neto_sl = precio_sl_teorico * (1 - fee_rate)
+            riesgo_real_unitario = costo_total_entrada - ingreso_neto_sl
+            
+            # Guard Clause: Evitar entrar si el riesgo no es calculable o SL > Entrada
+            if riesgo_real_unitario <= 0:
+                logger.warning(f"Senial en {current_date} RECHAZADA: Riesgo inválido (SL ${precio_sl_teorico:.2f} >= Entrada ${precio_entrada:.2f}).")
+                continue
+
+            ingreso_neto_tp1 = precio_tp1_teorico * (1 - fee_rate)
+            recompensa_real_unitaria = ingreso_neto_tp1 - costo_total_entrada
+            
+            # Guard Clause: Evitar entrar si el TP1 es menor que la entrada
+            if recompensa_real_unitaria <= 0:
+                logger.warning(f"Senial en {current_date} RECHAZADA: Recompensa nula o negativa (TP1 ${precio_tp1_teorico:.2f} <= Entrada ${precio_entrada:.2f}).")
+                continue
+            
+            ratio_rr_real = recompensa_real_unitaria / riesgo_real_unitario
+
+            # Decisión Final de Entrada
+            # IGNORANDO FILTRO R/R
+            # if ratio_rr_real < rr_min_ratio:
+            #     logger.warning(f"Senial en {current_date} RECHAZADA: Ratio R/R ({ratio_rr_real:.2f}) no cumple el minimo de {rr_min_ratio}.")
+            #     continue
+            # Calcular Tamaño de Posición
+            riesgo_en_usd = capital * risk_per_trade_pct
+            tamanio_posicion_btc = riesgo_en_usd / riesgo_real_unitario
+            costo_operacion = tamanio_posicion_btc * precio_entrada * (1 + fee_rate)
+            
+            # Guard Clause: No arriesgar más capital del que se tiene
+            if costo_operacion > capital:
+                logger.warning(f"Senial en {current_date} ignorada: capital insuficiente.")
+                continue
+            # Ejecutar la operación
+            capital -= costo_operacion
+            in_trade = True
+            active_trade = {
+                'entry_index': i,
+                'entry_price': precio_entrada,
+                'position_size': tamanio_posicion_btc,
+                'sl_price': precio_sl_teorico,
+                'tp1_price': precio_tp1_teorico,
+                'is_phase_2': False,
+            }
+            logger.info(f"NUEVA OPERACION en {current_date} a ${precio_entrada:,.2f} | "
+                        f"SL: ${precio_sl_teorico:,.2f} | TP1: ${precio_tp1_teorico:,.2f} | "
+                        f"RR: {ratio_rr_real:.2f}")
+
+    # Si la simulación termina con una operación abierta, la cerramos al último precio
+    if in_trade:
+        exit_price = df.iloc[-1]['Close']
+        capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
+        logger.warning(f"CIERRE FORZADO al final del backtest. Capital final: ${capital:,.2f}")
+
+    return capital, trade_log
     

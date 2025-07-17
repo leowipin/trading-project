@@ -1,0 +1,147 @@
+2025-07-16 17:20:04,257 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-16 17:20:04,279 - __main__ - INFO - Calculando indicadores...
+2025-07-16 17:20:04,288 - __main__ - INFO - Buscando señales de divergencia...
+2025-07-16 17:20:04,318 - exchange_functions - INFO - Iniciando simulación con Capital: $10,000.00
+2025-07-16 17:20:04,412 - exchange_functions - INFO - Senial en 2021-03-17 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:20:04,412 - exchange_functions - WARNING - Senial en 2021-03-17 RECHAZADA: Ratio R/R (0.27) no cumple el minimo de 1.5.
+2025-07-16 17:20:04,422 - exchange_functions - WARNING - Senial en 2021-03-24 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-16 17:20:04,454 - exchange_functions - WARNING - Senial en 2021-04-17 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-16 17:20:04,458 - exchange_functions - WARNING - Senial en 2021-04-19 RECHAZADA por filtro de volumen (Umbral: 6856.11).
+2025-07-16 17:20:04,490 - exchange_functions - WARNING - Senial en 2021-05-14 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-16 17:20:04,495 - exchange_functions - WARNING - Senial en 2021-05-17 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-16 17:20:04,512 - exchange_functions - WARNING - Senial en 2021-05-29 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-16 17:20:04,522 - exchange_functions - WARNING - Senial en 2021-06-05 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-16 17:20:04,532 - exchange_functions - WARNING - Senial en 2021-06-13 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-16 17:20:04,539 - exchange_functions - WARNING - Senial en 2021-06-17 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-16 17:20:04,573 - exchange_functions - WARNING - Senial en 2021-07-14 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-16 17:20:04,598 - exchange_functions - WARNING - Senial en 2021-08-02 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-16 17:20:04,601 - exchange_functions - WARNING - Senial en 2021-08-04 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-16 17:20:04,621 - exchange_functions - WARNING - Senial en 2021-08-18 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-16 17:20:04,632 - exchange_functions - INFO - Senial en 2021-08-26 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:20:04,632 - exchange_functions - WARNING - Senial en 2021-08-26 RECHAZADA: Ratio R/R (0.71) no cumple el minimo de 1.5.
+2025-07-16 17:20:04,641 - exchange_functions - WARNING - Senial en 2021-09-01 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-16 17:20:04,655 - exchange_functions - WARNING - Senial en 2021-09-09 RECHAZADA por filtro de volumen (Umbral: 2931.33).
+2025-07-16 17:20:04,671 - exchange_functions - WARNING - Senial en 2021-09-22 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-16 17:20:04,682 - exchange_functions - WARNING - Senial en 2021-09-29 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-16 17:20:04,714 - exchange_functions - INFO - Senial en 2021-10-24 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:20:04,714 - exchange_functions - WARNING - Senial en 2021-10-24 RECHAZADA: Ratio R/R (0.42) no cumple el minimo de 1.5.
+2025-07-16 17:20:04,739 - exchange_functions - WARNING - Senial en 2021-11-12 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-16 17:20:04,749 - exchange_functions - WARNING - Senial en 2021-11-18 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-16 17:20:04,758 - exchange_functions - WARNING - Senial en 2021-11-24 RECHAZADA por filtro de volumen (Umbral: 1754.52).
+2025-07-16 17:20:04,770 - exchange_functions - INFO - Senial en 2021-12-03 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:20:04,770 - exchange_functions - WARNING - Senial en 2021-12-03 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-16 17:20:04,782 - exchange_functions - INFO - Senial en 2021-12-11 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:20:04,782 - exchange_functions - WARNING - Senial en 2021-12-11 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-16 17:20:04,790 - exchange_functions - INFO - Senial en 2021-12-15 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:20:04,790 - exchange_functions - WARNING - Senial en 2021-12-15 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-16 17:20:04,812 - exchange_functions - WARNING - Senial en 2021-12-31 RECHAZADA por filtro de volumen (Umbral: 1657.28).
+2025-07-16 17:20:04,813 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:20:04,814 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-16 17:20:04,814 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:20:04,814 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-16 17:20:04,814 - __main__ - INFO - Capital Final:      $10,000.00
+2025-07-16 17:20:04,815 - __main__ - INFO - Ganancia/Pérdida:   $0.00 (0.00%)
+2025-07-16 17:20:04,815 - __main__ - INFO - Total de operaciones cerradas: 0
+2025-07-16 17:20:04,815 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:21:23,723 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-16 17:21:23,745 - __main__ - INFO - Calculando indicadores...
+2025-07-16 17:21:23,756 - __main__ - INFO - Buscando señales de divergencia...
+2025-07-16 17:21:23,797 - exchange_functions - INFO - Iniciando simulación con Capital: $10,000.00
+2025-07-16 17:21:23,894 - exchange_functions - INFO - Senial en 2021-03-17 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:21:23,894 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-03-17 a $55,151.01 | SL: $53,338.00 | TP1: $55,782.55 | RR: 0.27
+2025-07-16 17:21:23,896 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17: SL movido a breakeven ($55261.42)
+2025-07-16 17:21:23,896 - exchange_functions - INFO - CIERRE por TP2 en 2021-03-17: Capital final $10,063.90
+2025-07-16 17:21:23,905 - exchange_functions - WARNING - Senial en 2021-03-24 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-16 17:21:23,939 - exchange_functions - WARNING - Senial en 2021-04-17 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-16 17:21:23,944 - exchange_functions - WARNING - Senial en 2021-04-19 RECHAZADA por filtro de volumen (Umbral: 6856.11).
+2025-07-16 17:21:23,977 - exchange_functions - WARNING - Senial en 2021-05-14 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-16 17:21:23,982 - exchange_functions - WARNING - Senial en 2021-05-17 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-16 17:21:23,999 - exchange_functions - WARNING - Senial en 2021-05-29 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-16 17:21:24,009 - exchange_functions - WARNING - Senial en 2021-06-05 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-16 17:21:24,020 - exchange_functions - WARNING - Senial en 2021-06-13 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-16 17:21:24,027 - exchange_functions - WARNING - Senial en 2021-06-17 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-16 17:21:24,062 - exchange_functions - WARNING - Senial en 2021-07-14 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-16 17:21:24,088 - exchange_functions - WARNING - Senial en 2021-08-02 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-16 17:21:24,092 - exchange_functions - WARNING - Senial en 2021-08-04 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-16 17:21:24,112 - exchange_functions - WARNING - Senial en 2021-08-18 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-16 17:21:24,124 - exchange_functions - INFO - Senial en 2021-08-26 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:21:24,124 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-08-26 a $46,943.76 | SL: $45,702.98 | TP1: $47,990.03 | RR: 0.71
+2025-07-16 17:21:24,127 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27: SL movido a breakeven ($47037.74)
+2025-07-16 17:21:24,127 - exchange_functions - INFO - CIERRE por TP2 en 2021-08-27: Capital final $10,128.18
+2025-07-16 17:21:24,135 - exchange_functions - WARNING - Senial en 2021-09-01 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-16 17:21:24,148 - exchange_functions - WARNING - Senial en 2021-09-09 RECHAZADA por filtro de volumen (Umbral: 2931.33).
+2025-07-16 17:21:24,166 - exchange_functions - WARNING - Senial en 2021-09-22 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-16 17:21:24,177 - exchange_functions - WARNING - Senial en 2021-09-29 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-16 17:21:24,211 - exchange_functions - INFO - Senial en 2021-10-24 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:21:24,211 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-10-24 a $60,114.62 | SL: $59,211.74 | TP1: $60,663.39 | RR: 0.42
+2025-07-16 17:21:24,212 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24: SL movido a breakeven ($60234.97)
+2025-07-16 17:21:24,213 - exchange_functions - INFO - CIERRE por TP2 en 2021-10-25: Capital final $10,207.18
+2025-07-16 17:21:24,240 - exchange_functions - WARNING - Senial en 2021-11-12 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-16 17:21:24,249 - exchange_functions - WARNING - Senial en 2021-11-18 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-16 17:21:24,259 - exchange_functions - WARNING - Senial en 2021-11-24 RECHAZADA por filtro de volumen (Umbral: 1754.52).
+2025-07-16 17:21:24,272 - exchange_functions - INFO - Senial en 2021-12-03 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:21:24,272 - exchange_functions - WARNING - Senial en 2021-12-03 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-16 17:21:24,284 - exchange_functions - INFO - Senial en 2021-12-11 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:21:24,285 - exchange_functions - WARNING - Senial en 2021-12-11 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-16 17:21:24,293 - exchange_functions - INFO - Senial en 2021-12-15 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:21:24,294 - exchange_functions - WARNING - Senial en 2021-12-15 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-16 17:21:24,316 - exchange_functions - WARNING - Senial en 2021-12-31 RECHAZADA por filtro de volumen (Umbral: 1657.28).
+2025-07-16 17:21:24,317 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:21:24,318 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-16 17:21:24,318 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:21:24,318 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-16 17:21:24,318 - __main__ - INFO - Capital Final:      $10,207.18
+2025-07-16 17:21:24,319 - __main__ - INFO - Ganancia/Pérdida:   $207.18 (2.07%)
+2025-07-16 17:21:24,319 - __main__ - INFO - Total de operaciones cerradas: 3
+2025-07-16 17:21:24,319 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:24:48,468 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-16 17:24:48,490 - __main__ - INFO - Calculando indicadores...
+2025-07-16 17:24:48,498 - __main__ - INFO - Buscando señales de divergencia...
+2025-07-16 17:24:48,527 - exchange_functions - INFO - Iniciando simulación con Capital: $10,000.00
+2025-07-16 17:24:48,622 - exchange_functions - INFO - Senial en 2021-03-17 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:24:48,623 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-03-17 a $55,151.01 | SL: $53,338.00 | TP1: $55,782.55 | RR: 0.27
+2025-07-16 17:24:48,624 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17: SL movido a breakeven ($55261.42)
+2025-07-16 17:24:48,624 - exchange_functions - INFO - CIERRE por TP2 en 2021-03-17: Capital final $10,063.90
+2025-07-16 17:24:48,634 - exchange_functions - WARNING - Senial en 2021-03-24 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-16 17:24:48,667 - exchange_functions - WARNING - Senial en 2021-04-17 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-16 17:24:48,672 - exchange_functions - WARNING - Senial en 2021-04-19 RECHAZADA por filtro de volumen (Umbral: 6856.11).
+2025-07-16 17:24:48,704 - exchange_functions - WARNING - Senial en 2021-05-14 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-16 17:24:48,710 - exchange_functions - WARNING - Senial en 2021-05-17 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-16 17:24:48,726 - exchange_functions - WARNING - Senial en 2021-05-29 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-16 17:24:48,737 - exchange_functions - WARNING - Senial en 2021-06-05 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-16 17:24:48,747 - exchange_functions - WARNING - Senial en 2021-06-13 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-16 17:24:48,755 - exchange_functions - WARNING - Senial en 2021-06-17 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-16 17:24:48,789 - exchange_functions - WARNING - Senial en 2021-07-14 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-16 17:24:48,815 - exchange_functions - WARNING - Senial en 2021-08-02 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-16 17:24:48,819 - exchange_functions - WARNING - Senial en 2021-08-04 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-16 17:24:48,839 - exchange_functions - WARNING - Senial en 2021-08-18 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-16 17:24:48,852 - exchange_functions - INFO - Senial en 2021-08-26 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:24:48,852 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-08-26 a $46,943.76 | SL: $45,702.98 | TP1: $47,990.03 | RR: 0.71
+2025-07-16 17:24:48,854 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27: SL movido a breakeven ($47037.74)
+2025-07-16 17:24:48,855 - exchange_functions - INFO - CIERRE por TP2 en 2021-08-27: Capital final $10,128.18
+2025-07-16 17:24:48,862 - exchange_functions - WARNING - Senial en 2021-09-01 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-16 17:24:48,876 - exchange_functions - WARNING - Senial en 2021-09-09 RECHAZADA por filtro de volumen (Umbral: 2931.33).
+2025-07-16 17:24:48,892 - exchange_functions - WARNING - Senial en 2021-09-22 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-16 17:24:48,904 - exchange_functions - WARNING - Senial en 2021-09-29 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-16 17:24:48,937 - exchange_functions - INFO - Senial en 2021-10-24 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:24:48,937 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-10-24 a $60,114.62 | SL: $59,211.74 | TP1: $60,663.39 | RR: 0.42
+2025-07-16 17:24:48,937 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24: SL movido a breakeven ($60234.97)
+2025-07-16 17:24:48,938 - exchange_functions - INFO - CIERRE por TP2 en 2021-10-25: Capital final $10,207.18
+2025-07-16 17:24:48,962 - exchange_functions - WARNING - Senial en 2021-11-12 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-16 17:24:48,972 - exchange_functions - WARNING - Senial en 2021-11-18 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-16 17:24:48,982 - exchange_functions - WARNING - Senial en 2021-11-24 RECHAZADA por filtro de volumen (Umbral: 1754.52).
+2025-07-16 17:24:48,994 - exchange_functions - INFO - Senial en 2021-12-03 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:24:48,994 - exchange_functions - WARNING - Senial en 2021-12-03 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-16 17:24:49,007 - exchange_functions - INFO - Senial en 2021-12-11 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:24:49,007 - exchange_functions - WARNING - Senial en 2021-12-11 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-16 17:24:49,015 - exchange_functions - INFO - Senial en 2021-12-15 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-16 17:24:49,015 - exchange_functions - WARNING - Senial en 2021-12-15 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-16 17:24:49,037 - exchange_functions - WARNING - Senial en 2021-12-31 RECHAZADA por filtro de volumen (Umbral: 1657.28).
+2025-07-16 17:24:49,038 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:24:49,039 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-16 17:24:49,039 - __main__ - INFO - -------------------------------------------
+2025-07-16 17:24:49,039 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-16 17:24:49,039 - __main__ - INFO - Capital Final:      $10,207.18
+2025-07-16 17:24:49,039 - __main__ - INFO - Ganancia/Pérdida:   $207.18 (2.07%)
+2025-07-16 17:24:49,040 - __main__ - INFO - Total de operaciones cerradas: 3
+2025-07-16 17:24:49,040 - __main__ - INFO - -------------------------------------------
