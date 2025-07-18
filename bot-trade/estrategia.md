@@ -93,7 +93,7 @@ Una vez la orden se ha ejecutado, se aplican las siguientes reglas de salida:
     - **Movimiento Clave (Breakeven Real):** Inmediatamente después, mover el Stop Loss del 50% restante a un precio que cubra los costos de transacción.
         - **Fórmula SL Breakeven:** SL_Breakeven = (Precio_Entrada * (1 + fee_rate)) / (1 - fee_rate)
 - **Fase 2: Maximizar Potencial (TP2):**
-    - **Objetivo:** La Banda Superior de Bollinger (o %B >= 0.9 para una salida más conservadora).
+    - **Objetivo:** La Banda Superior de Bollinger (o %B >= 1).
     - **Acción:** Cuando el precio toque este objetivo, cerrar el 50% restante de la posición.
 
 **C. Salida por Tiempo (Time Stop):**

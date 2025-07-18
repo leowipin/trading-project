@@ -1,147 +1,1667 @@
-2025-07-16 17:20:04,257 - __main__ - INFO - Leyendo el archivo de datos...
-2025-07-16 17:20:04,279 - __main__ - INFO - Calculando indicadores...
-2025-07-16 17:20:04,288 - __main__ - INFO - Buscando señales de divergencia...
-2025-07-16 17:20:04,318 - exchange_functions - INFO - Iniciando simulación con Capital: $10,000.00
-2025-07-16 17:20:04,412 - exchange_functions - INFO - Senial en 2021-03-17 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:20:04,412 - exchange_functions - WARNING - Senial en 2021-03-17 RECHAZADA: Ratio R/R (0.27) no cumple el minimo de 1.5.
-2025-07-16 17:20:04,422 - exchange_functions - WARNING - Senial en 2021-03-24 RECHAZADA por filtro de volumen (Umbral: 3354.43).
-2025-07-16 17:20:04,454 - exchange_functions - WARNING - Senial en 2021-04-17 RECHAZADA por filtro de volumen (Umbral: 4737.27).
-2025-07-16 17:20:04,458 - exchange_functions - WARNING - Senial en 2021-04-19 RECHAZADA por filtro de volumen (Umbral: 6856.11).
-2025-07-16 17:20:04,490 - exchange_functions - WARNING - Senial en 2021-05-14 RECHAZADA por filtro de volumen (Umbral: 4644.02).
-2025-07-16 17:20:04,495 - exchange_functions - WARNING - Senial en 2021-05-17 RECHAZADA por filtro de volumen (Umbral: 10908.59).
-2025-07-16 17:20:04,512 - exchange_functions - WARNING - Senial en 2021-05-29 RECHAZADA por filtro de volumen (Umbral: 9179.30).
-2025-07-16 17:20:04,522 - exchange_functions - WARNING - Senial en 2021-06-05 RECHAZADA por filtro de volumen (Umbral: 5049.50).
-2025-07-16 17:20:04,532 - exchange_functions - WARNING - Senial en 2021-06-13 RECHAZADA por filtro de volumen (Umbral: 2628.16).
-2025-07-16 17:20:04,539 - exchange_functions - WARNING - Senial en 2021-06-17 RECHAZADA por filtro de volumen (Umbral: 5569.39).
-2025-07-16 17:20:04,573 - exchange_functions - WARNING - Senial en 2021-07-14 RECHAZADA por filtro de volumen (Umbral: 2663.48).
-2025-07-16 17:20:04,598 - exchange_functions - WARNING - Senial en 2021-08-02 RECHAZADA por filtro de volumen (Umbral: 3300.14).
-2025-07-16 17:20:04,601 - exchange_functions - WARNING - Senial en 2021-08-04 RECHAZADA por filtro de volumen (Umbral: 2486.37).
-2025-07-16 17:20:04,621 - exchange_functions - WARNING - Senial en 2021-08-18 RECHAZADA por filtro de volumen (Umbral: 3496.32).
-2025-07-16 17:20:04,632 - exchange_functions - INFO - Senial en 2021-08-26 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:20:04,632 - exchange_functions - WARNING - Senial en 2021-08-26 RECHAZADA: Ratio R/R (0.71) no cumple el minimo de 1.5.
-2025-07-16 17:20:04,641 - exchange_functions - WARNING - Senial en 2021-09-01 RECHAZADA por filtro de volumen (Umbral: 2511.25).
-2025-07-16 17:20:04,655 - exchange_functions - WARNING - Senial en 2021-09-09 RECHAZADA por filtro de volumen (Umbral: 2931.33).
-2025-07-16 17:20:04,671 - exchange_functions - WARNING - Senial en 2021-09-22 RECHAZADA por filtro de volumen (Umbral: 5590.78).
-2025-07-16 17:20:04,682 - exchange_functions - WARNING - Senial en 2021-09-29 RECHAZADA por filtro de volumen (Umbral: 2572.63).
-2025-07-16 17:20:04,714 - exchange_functions - INFO - Senial en 2021-10-24 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:20:04,714 - exchange_functions - WARNING - Senial en 2021-10-24 RECHAZADA: Ratio R/R (0.42) no cumple el minimo de 1.5.
-2025-07-16 17:20:04,739 - exchange_functions - WARNING - Senial en 2021-11-12 RECHAZADA por filtro de volumen (Umbral: 2454.64).
-2025-07-16 17:20:04,749 - exchange_functions - WARNING - Senial en 2021-11-18 RECHAZADA por filtro de volumen (Umbral: 2016.30).
-2025-07-16 17:20:04,758 - exchange_functions - WARNING - Senial en 2021-11-24 RECHAZADA por filtro de volumen (Umbral: 1754.52).
-2025-07-16 17:20:04,770 - exchange_functions - INFO - Senial en 2021-12-03 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:20:04,770 - exchange_functions - WARNING - Senial en 2021-12-03 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
-2025-07-16 17:20:04,782 - exchange_functions - INFO - Senial en 2021-12-11 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:20:04,782 - exchange_functions - WARNING - Senial en 2021-12-11 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
-2025-07-16 17:20:04,790 - exchange_functions - INFO - Senial en 2021-12-15 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:20:04,790 - exchange_functions - WARNING - Senial en 2021-12-15 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
-2025-07-16 17:20:04,812 - exchange_functions - WARNING - Senial en 2021-12-31 RECHAZADA por filtro de volumen (Umbral: 1657.28).
-2025-07-16 17:20:04,813 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:20:04,814 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
-2025-07-16 17:20:04,814 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:20:04,814 - __main__ - INFO - Capital Inicial:    $10,000.00
-2025-07-16 17:20:04,814 - __main__ - INFO - Capital Final:      $10,000.00
-2025-07-16 17:20:04,815 - __main__ - INFO - Ganancia/Pérdida:   $0.00 (0.00%)
-2025-07-16 17:20:04,815 - __main__ - INFO - Total de operaciones cerradas: 0
-2025-07-16 17:20:04,815 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:21:23,723 - __main__ - INFO - Leyendo el archivo de datos...
-2025-07-16 17:21:23,745 - __main__ - INFO - Calculando indicadores...
-2025-07-16 17:21:23,756 - __main__ - INFO - Buscando señales de divergencia...
-2025-07-16 17:21:23,797 - exchange_functions - INFO - Iniciando simulación con Capital: $10,000.00
-2025-07-16 17:21:23,894 - exchange_functions - INFO - Senial en 2021-03-17 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:21:23,894 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-03-17 a $55,151.01 | SL: $53,338.00 | TP1: $55,782.55 | RR: 0.27
-2025-07-16 17:21:23,896 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17: SL movido a breakeven ($55261.42)
-2025-07-16 17:21:23,896 - exchange_functions - INFO - CIERRE por TP2 en 2021-03-17: Capital final $10,063.90
-2025-07-16 17:21:23,905 - exchange_functions - WARNING - Senial en 2021-03-24 RECHAZADA por filtro de volumen (Umbral: 3354.43).
-2025-07-16 17:21:23,939 - exchange_functions - WARNING - Senial en 2021-04-17 RECHAZADA por filtro de volumen (Umbral: 4737.27).
-2025-07-16 17:21:23,944 - exchange_functions - WARNING - Senial en 2021-04-19 RECHAZADA por filtro de volumen (Umbral: 6856.11).
-2025-07-16 17:21:23,977 - exchange_functions - WARNING - Senial en 2021-05-14 RECHAZADA por filtro de volumen (Umbral: 4644.02).
-2025-07-16 17:21:23,982 - exchange_functions - WARNING - Senial en 2021-05-17 RECHAZADA por filtro de volumen (Umbral: 10908.59).
-2025-07-16 17:21:23,999 - exchange_functions - WARNING - Senial en 2021-05-29 RECHAZADA por filtro de volumen (Umbral: 9179.30).
-2025-07-16 17:21:24,009 - exchange_functions - WARNING - Senial en 2021-06-05 RECHAZADA por filtro de volumen (Umbral: 5049.50).
-2025-07-16 17:21:24,020 - exchange_functions - WARNING - Senial en 2021-06-13 RECHAZADA por filtro de volumen (Umbral: 2628.16).
-2025-07-16 17:21:24,027 - exchange_functions - WARNING - Senial en 2021-06-17 RECHAZADA por filtro de volumen (Umbral: 5569.39).
-2025-07-16 17:21:24,062 - exchange_functions - WARNING - Senial en 2021-07-14 RECHAZADA por filtro de volumen (Umbral: 2663.48).
-2025-07-16 17:21:24,088 - exchange_functions - WARNING - Senial en 2021-08-02 RECHAZADA por filtro de volumen (Umbral: 3300.14).
-2025-07-16 17:21:24,092 - exchange_functions - WARNING - Senial en 2021-08-04 RECHAZADA por filtro de volumen (Umbral: 2486.37).
-2025-07-16 17:21:24,112 - exchange_functions - WARNING - Senial en 2021-08-18 RECHAZADA por filtro de volumen (Umbral: 3496.32).
-2025-07-16 17:21:24,124 - exchange_functions - INFO - Senial en 2021-08-26 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:21:24,124 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-08-26 a $46,943.76 | SL: $45,702.98 | TP1: $47,990.03 | RR: 0.71
-2025-07-16 17:21:24,127 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27: SL movido a breakeven ($47037.74)
-2025-07-16 17:21:24,127 - exchange_functions - INFO - CIERRE por TP2 en 2021-08-27: Capital final $10,128.18
-2025-07-16 17:21:24,135 - exchange_functions - WARNING - Senial en 2021-09-01 RECHAZADA por filtro de volumen (Umbral: 2511.25).
-2025-07-16 17:21:24,148 - exchange_functions - WARNING - Senial en 2021-09-09 RECHAZADA por filtro de volumen (Umbral: 2931.33).
-2025-07-16 17:21:24,166 - exchange_functions - WARNING - Senial en 2021-09-22 RECHAZADA por filtro de volumen (Umbral: 5590.78).
-2025-07-16 17:21:24,177 - exchange_functions - WARNING - Senial en 2021-09-29 RECHAZADA por filtro de volumen (Umbral: 2572.63).
-2025-07-16 17:21:24,211 - exchange_functions - INFO - Senial en 2021-10-24 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:21:24,211 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-10-24 a $60,114.62 | SL: $59,211.74 | TP1: $60,663.39 | RR: 0.42
-2025-07-16 17:21:24,212 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24: SL movido a breakeven ($60234.97)
-2025-07-16 17:21:24,213 - exchange_functions - INFO - CIERRE por TP2 en 2021-10-25: Capital final $10,207.18
-2025-07-16 17:21:24,240 - exchange_functions - WARNING - Senial en 2021-11-12 RECHAZADA por filtro de volumen (Umbral: 2454.64).
-2025-07-16 17:21:24,249 - exchange_functions - WARNING - Senial en 2021-11-18 RECHAZADA por filtro de volumen (Umbral: 2016.30).
-2025-07-16 17:21:24,259 - exchange_functions - WARNING - Senial en 2021-11-24 RECHAZADA por filtro de volumen (Umbral: 1754.52).
-2025-07-16 17:21:24,272 - exchange_functions - INFO - Senial en 2021-12-03 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:21:24,272 - exchange_functions - WARNING - Senial en 2021-12-03 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
-2025-07-16 17:21:24,284 - exchange_functions - INFO - Senial en 2021-12-11 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:21:24,285 - exchange_functions - WARNING - Senial en 2021-12-11 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
-2025-07-16 17:21:24,293 - exchange_functions - INFO - Senial en 2021-12-15 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:21:24,294 - exchange_functions - WARNING - Senial en 2021-12-15 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
-2025-07-16 17:21:24,316 - exchange_functions - WARNING - Senial en 2021-12-31 RECHAZADA por filtro de volumen (Umbral: 1657.28).
-2025-07-16 17:21:24,317 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:21:24,318 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
-2025-07-16 17:21:24,318 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:21:24,318 - __main__ - INFO - Capital Inicial:    $10,000.00
-2025-07-16 17:21:24,318 - __main__ - INFO - Capital Final:      $10,207.18
-2025-07-16 17:21:24,319 - __main__ - INFO - Ganancia/Pérdida:   $207.18 (2.07%)
-2025-07-16 17:21:24,319 - __main__ - INFO - Total de operaciones cerradas: 3
-2025-07-16 17:21:24,319 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:24:48,468 - __main__ - INFO - Leyendo el archivo de datos...
-2025-07-16 17:24:48,490 - __main__ - INFO - Calculando indicadores...
-2025-07-16 17:24:48,498 - __main__ - INFO - Buscando señales de divergencia...
-2025-07-16 17:24:48,527 - exchange_functions - INFO - Iniciando simulación con Capital: $10,000.00
-2025-07-16 17:24:48,622 - exchange_functions - INFO - Senial en 2021-03-17 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:24:48,623 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-03-17 a $55,151.01 | SL: $53,338.00 | TP1: $55,782.55 | RR: 0.27
-2025-07-16 17:24:48,624 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17: SL movido a breakeven ($55261.42)
-2025-07-16 17:24:48,624 - exchange_functions - INFO - CIERRE por TP2 en 2021-03-17: Capital final $10,063.90
-2025-07-16 17:24:48,634 - exchange_functions - WARNING - Senial en 2021-03-24 RECHAZADA por filtro de volumen (Umbral: 3354.43).
-2025-07-16 17:24:48,667 - exchange_functions - WARNING - Senial en 2021-04-17 RECHAZADA por filtro de volumen (Umbral: 4737.27).
-2025-07-16 17:24:48,672 - exchange_functions - WARNING - Senial en 2021-04-19 RECHAZADA por filtro de volumen (Umbral: 6856.11).
-2025-07-16 17:24:48,704 - exchange_functions - WARNING - Senial en 2021-05-14 RECHAZADA por filtro de volumen (Umbral: 4644.02).
-2025-07-16 17:24:48,710 - exchange_functions - WARNING - Senial en 2021-05-17 RECHAZADA por filtro de volumen (Umbral: 10908.59).
-2025-07-16 17:24:48,726 - exchange_functions - WARNING - Senial en 2021-05-29 RECHAZADA por filtro de volumen (Umbral: 9179.30).
-2025-07-16 17:24:48,737 - exchange_functions - WARNING - Senial en 2021-06-05 RECHAZADA por filtro de volumen (Umbral: 5049.50).
-2025-07-16 17:24:48,747 - exchange_functions - WARNING - Senial en 2021-06-13 RECHAZADA por filtro de volumen (Umbral: 2628.16).
-2025-07-16 17:24:48,755 - exchange_functions - WARNING - Senial en 2021-06-17 RECHAZADA por filtro de volumen (Umbral: 5569.39).
-2025-07-16 17:24:48,789 - exchange_functions - WARNING - Senial en 2021-07-14 RECHAZADA por filtro de volumen (Umbral: 2663.48).
-2025-07-16 17:24:48,815 - exchange_functions - WARNING - Senial en 2021-08-02 RECHAZADA por filtro de volumen (Umbral: 3300.14).
-2025-07-16 17:24:48,819 - exchange_functions - WARNING - Senial en 2021-08-04 RECHAZADA por filtro de volumen (Umbral: 2486.37).
-2025-07-16 17:24:48,839 - exchange_functions - WARNING - Senial en 2021-08-18 RECHAZADA por filtro de volumen (Umbral: 3496.32).
-2025-07-16 17:24:48,852 - exchange_functions - INFO - Senial en 2021-08-26 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:24:48,852 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-08-26 a $46,943.76 | SL: $45,702.98 | TP1: $47,990.03 | RR: 0.71
-2025-07-16 17:24:48,854 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27: SL movido a breakeven ($47037.74)
-2025-07-16 17:24:48,855 - exchange_functions - INFO - CIERRE por TP2 en 2021-08-27: Capital final $10,128.18
-2025-07-16 17:24:48,862 - exchange_functions - WARNING - Senial en 2021-09-01 RECHAZADA por filtro de volumen (Umbral: 2511.25).
-2025-07-16 17:24:48,876 - exchange_functions - WARNING - Senial en 2021-09-09 RECHAZADA por filtro de volumen (Umbral: 2931.33).
-2025-07-16 17:24:48,892 - exchange_functions - WARNING - Senial en 2021-09-22 RECHAZADA por filtro de volumen (Umbral: 5590.78).
-2025-07-16 17:24:48,904 - exchange_functions - WARNING - Senial en 2021-09-29 RECHAZADA por filtro de volumen (Umbral: 2572.63).
-2025-07-16 17:24:48,937 - exchange_functions - INFO - Senial en 2021-10-24 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:24:48,937 - exchange_functions - INFO - NUEVA OPERACIÓN en 2021-10-24 a $60,114.62 | SL: $59,211.74 | TP1: $60,663.39 | RR: 0.42
-2025-07-16 17:24:48,937 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24: SL movido a breakeven ($60234.97)
-2025-07-16 17:24:48,938 - exchange_functions - INFO - CIERRE por TP2 en 2021-10-25: Capital final $10,207.18
-2025-07-16 17:24:48,962 - exchange_functions - WARNING - Senial en 2021-11-12 RECHAZADA por filtro de volumen (Umbral: 2454.64).
-2025-07-16 17:24:48,972 - exchange_functions - WARNING - Senial en 2021-11-18 RECHAZADA por filtro de volumen (Umbral: 2016.30).
-2025-07-16 17:24:48,982 - exchange_functions - WARNING - Senial en 2021-11-24 RECHAZADA por filtro de volumen (Umbral: 1754.52).
-2025-07-16 17:24:48,994 - exchange_functions - INFO - Senial en 2021-12-03 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:24:48,994 - exchange_functions - WARNING - Senial en 2021-12-03 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
-2025-07-16 17:24:49,007 - exchange_functions - INFO - Senial en 2021-12-11 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:24:49,007 - exchange_functions - WARNING - Senial en 2021-12-11 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
-2025-07-16 17:24:49,015 - exchange_functions - INFO - Senial en 2021-12-15 SUPERO filtro de volumen. Evaluando R/R...
-2025-07-16 17:24:49,015 - exchange_functions - WARNING - Senial en 2021-12-15 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
-2025-07-16 17:24:49,037 - exchange_functions - WARNING - Senial en 2021-12-31 RECHAZADA por filtro de volumen (Umbral: 1657.28).
-2025-07-16 17:24:49,038 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:24:49,039 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
-2025-07-16 17:24:49,039 - __main__ - INFO - -------------------------------------------
-2025-07-16 17:24:49,039 - __main__ - INFO - Capital Inicial:    $10,000.00
-2025-07-16 17:24:49,039 - __main__ - INFO - Capital Final:      $10,207.18
-2025-07-16 17:24:49,039 - __main__ - INFO - Ganancia/Pérdida:   $207.18 (2.07%)
-2025-07-16 17:24:49,040 - __main__ - INFO - Total de operaciones cerradas: 3
-2025-07-16 17:24:49,040 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:04:32,472 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:04:32,490 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:04:32,498 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:04:32,526 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:04:32,617 - exchange_functions - INFO - Senial en 2021-03-17 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:04:32,617 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-17 12:00:00 a $55,151.01
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $2,870.21
+    - Costo Total (c/comision): $2,873.08
+    - SL: $53,338.00 | TP1: $55,782.55 | RR (TP1): 0.27
+2025-07-17 19:04:32,618 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17 18:00:00 a $55,782.55. P&L Parte 1: $13.55. SL movido a breakeven ($55261.42)
+2025-07-17 19:04:32,619 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-03-17 19:00:00 a $57,198.57.
+    - P&L Parte 2: $50.36
+    - P&L Total Op.: $63.90 (2.22% ROI)
+    - Capital final: $10,063.90
+2025-07-17 19:04:32,628 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 19:04:32,659 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 19:04:32,664 - exchange_functions - WARNING - Senial en 2021-04-19 18:00:00 RECHAZADA por filtro de volumen (Umbral: 6856.11).
+2025-07-17 19:04:32,696 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 19:04:32,702 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 19:04:32,717 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 19:04:32,727 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 19:04:32,737 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 19:04:32,744 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 19:04:32,777 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 19:04:32,801 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 19:04:32,804 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 19:04:32,822 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 19:04:32,834 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:04:32,834 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $100.64
+    - Tamanio Posicion (Bruto): $3,543.03
+    - Costo Total (c/comision): $3,546.57
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 19:04:32,837 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. P&L Parte 1: $35.90. SL movido a breakeven ($47037.74)
+2025-07-17 19:04:32,837 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.38
+    - P&L Total Op.: $64.28 (1.81% ROI)
+    - Capital final: $10,128.18
+2025-07-17 19:04:32,844 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 19:04:32,856 - exchange_functions - WARNING - Senial en 2021-09-09 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2931.33).
+2025-07-17 19:04:32,871 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 19:04:32,883 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 19:04:32,918 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:04:32,918 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $101.28
+    - Tamanio Posicion (Bruto): $5,956.24
+    - Costo Total (c/comision): $5,962.19
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 19:04:32,919 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. P&L Parte 1: $21.20. SL movido a breakeven ($60234.97)
+2025-07-17 19:04:32,920 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.79
+    - P&L Total Op.: $79.00 (1.32% ROI)
+    - Capital final: $10,207.18
+2025-07-17 19:04:32,944 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 19:04:32,954 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 19:04:32,962 - exchange_functions - WARNING - Senial en 2021-11-24 05:00:00 RECHAZADA por filtro de volumen (Umbral: 1754.52).
+2025-07-17 19:04:32,975 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:04:32,975 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 19:04:32,986 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:04:32,987 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 19:04:32,994 - exchange_functions - INFO - Senial en 2021-12-15 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:04:32,995 - exchange_functions - WARNING - Senial en 2021-12-15 18:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-17 19:04:33,015 - exchange_functions - WARNING - Senial en 2021-12-31 05:00:00 RECHAZADA por filtro de volumen (Umbral: 1657.28).
+2025-07-17 19:04:33,016 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:04:33,017 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:04:33,017 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:04:33,018 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:04:33,018 - __main__ - INFO - Capital Final:      $10,207.18
+2025-07-17 19:04:33,018 - __main__ - INFO - Ganancia/Perdida:   $207.18 (2.07%)
+2025-07-17 19:04:33,018 - __main__ - INFO - Total de operaciones cerradas: 3
+2025-07-17 19:04:33,019 - __main__ - INFO - -------------------------------------------2025-07-17 19:58:18,689 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:58:18,731 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:58:18,750 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:58:18,779 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:58:18,878 - exchange_functions - WARNING - Senial en 2021-03-25 02:00:00 RECHAZADA por filtro de volumen (Umbral: 8374.84).
+2025-07-17 19:58:18,912 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 19:58:18,919 - exchange_functions - INFO - Senial en 2021-04-22 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:18,919 - exchange_functions - INFO - NUEVA OPERACION en 2021-04-22 02:00:00 a $53,760.82
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $2,533.60
+    - Costo Total (c/comision): $2,536.14
+    - SL: $51,744.42 | TP1: $55,021.15 | RR (TP1): 0.54
+2025-07-17 19:58:18,921 - exchange_functions - INFO - ALCANZADO TP1 en 2021-04-22 11:00:00 a $55,021.15. 
+    - P&L Parte 1: $27.13. SL movido a breakeven ($53868.45)
+2025-07-17 19:58:18,922 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-04-22 17:00:00 a $53,868.45. P&L Parte 2: $-0.00. Capital final $10,027.13
+2025-07-17 19:58:18,929 - exchange_functions - INFO - Senial en 2021-04-26 00:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:18,930 - exchange_functions - WARNING - Senial en 2021-04-26 00:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $49600.15 <= Entrada $50900.00).
+2025-07-17 19:58:18,955 - exchange_functions - WARNING - Senial en 2021-05-15 10:00:00 RECHAZADA por filtro de volumen (Umbral: 4508.79).
+2025-07-17 19:58:18,977 - exchange_functions - INFO - Senial en 2021-05-31 08:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:18,977 - exchange_functions - WARNING - Senial en 2021-05-31 08:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $35444.27 <= Entrada $36120.49).
+2025-07-17 19:58:18,985 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 19:58:19,006 - exchange_functions - INFO - Senial en 2021-06-20 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,006 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-20 14:00:00 a $34,316.81
+    - Capital en Riesgo (1%): $100.27
+    - Tamanio Posicion (Bruto): $2,900.71
+    - Costo Total (c/comision): $2,903.61
+    - SL: $33,198.07 | TP1: $35,209.54 | RR (TP1): 0.69
+2025-07-17 19:58:19,007 - exchange_functions - INFO - ALCANZADO TP1 en 2021-06-20 19:00:00 a $35,209.54. 
+    - P&L Parte 1: $34.79. SL movido a breakeven ($34385.51)
+2025-07-17 19:58:19,009 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-06-21 04:00:00 a $34,385.51. P&L Parte 2: $0.00. Capital final $10,061.93
+2025-07-17 19:58:19,041 - exchange_functions - INFO - Senial en 2021-07-15 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,041 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-15 15:00:00 a $31,677.01
+    - Capital en Riesgo (1%): $100.62
+    - Tamanio Posicion (Bruto): $7,826.50
+    - Costo Total (c/comision): $7,834.32
+    - SL: $31,332.77 | TP1: $32,420.10 | RR (TP1): 1.67
+2025-07-17 19:58:19,042 - exchange_functions - WARNING - CIERRE por SL en 2021-07-15 17:00:00 a $31,332.77. P&L: $-100.62. Capital final $9,961.31
+2025-07-17 19:58:19,069 - exchange_functions - INFO - Senial en 2021-08-05 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,070 - exchange_functions - WARNING - Senial en 2021-08-05 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $39050.19 <= Entrada $39002.78).
+2025-07-17 19:58:19,097 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,098 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $99.61
+    - Tamanio Posicion (Bruto): $3,506.91
+    - Costo Total (c/comision): $3,510.42
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 19:58:19,100 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.53. SL movido a breakeven ($47037.74)
+2025-07-17 19:58:19,101 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.09
+    - P&L Total Op.: $63.63 (1.81% ROI)
+    - Capital final: $10,024.93
+2025-07-17 19:58:19,121 - exchange_functions - INFO - Senial en 2021-09-10 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,121 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-10 11:00:00 a $46,331.86
+    - Capital en Riesgo (1%): $100.25
+    - Tamanio Posicion (Bruto): $5,032.45
+    - Costo Total (c/comision): $5,037.48
+    - SL: $45,500.73 | TP1: $46,514.80 | RR (TP1): 0.10
+2025-07-17 19:58:19,123 - exchange_functions - WARNING - CIERRE por SL en 2021-09-10 14:00:00 a $45,500.73. P&L: $-100.25. Capital final $9,924.68
+2025-07-17 19:58:19,141 - exchange_functions - WARNING - Senial en 2021-09-24 15:00:00 RECHAZADA por filtro de volumen (Umbral: 10420.86).
+2025-07-17 19:58:19,195 - exchange_functions - WARNING - Senial en 2021-11-06 15:00:00 RECHAZADA por filtro de volumen (Umbral: 2476.75).
+2025-07-17 19:58:19,204 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 19:58:19,213 - exchange_functions - INFO - Senial en 2021-11-18 19:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,214 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-18 19:00:00 a $57,928.00
+    - Capital en Riesgo (1%): $99.25
+    - Tamanio Posicion (Bruto): $5,113.28
+    - Costo Total (c/comision): $5,118.40
+    - SL: $56,918.49 | TP1: $59,229.83 | RR (TP1): 1.05
+2025-07-17 19:58:19,215 - exchange_functions - WARNING - CIERRE por SL en 2021-11-18 22:00:00 a $56,918.49. P&L: $-99.25. Capital final $9,825.44
+2025-07-17 19:58:19,223 - exchange_functions - INFO - Senial en 2021-11-24 16:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,224 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-24 16:00:00 a $56,608.82
+    - Capital en Riesgo (1%): $98.25
+    - Tamanio Posicion (Bruto): $7,378.81
+    - Costo Total (c/comision): $7,386.19
+    - SL: $55,967.61 | TP1: $56,736.85 | RR (TP1): 0.02
+2025-07-17 19:58:19,225 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-24 17:00:00 a $56,736.85. 
+    - P&L Parte 1: $0.96. SL movido a breakeven ($56722.15)
+2025-07-17 19:58:19,226 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-11-24 18:00:00 a $56,722.15. P&L Parte 2: $-0.00. Capital final $9,826.39
+2025-07-17 19:58:19,252 - exchange_functions - INFO - Senial en 2021-12-15 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:19,253 - exchange_functions - WARNING - Senial en 2021-12-15 18:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-17 19:58:19,275 - exchange_functions - WARNING - Senial en 2021-12-31 22:00:00 RECHAZADA por filtro de volumen (Umbral: 2248.30).
+2025-07-17 19:58:19,276 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:19,277 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:58:19,277 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:19,277 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:58:19,277 - __main__ - INFO - Capital Final:      $9,826.39
+2025-07-17 19:58:19,277 - __main__ - INFO - Ganancia/Perdida:   $-173.61 (-1.74%)
+2025-07-17 19:58:19,277 - __main__ - INFO - Total de operaciones cerradas: 7
+2025-07-17 19:58:19,278 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:38,126 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:58:38,146 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:58:38,155 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:58:38,174 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:58:38,241 - exchange_functions - WARNING - Senial en 2021-02-26 04:00:00 RECHAZADA por filtro de volumen (Umbral: 7355.66).
+2025-07-17 19:58:38,245 - exchange_functions - WARNING - Senial en 2021-02-28 07:00:00 RECHAZADA por filtro de volumen (Umbral: 4405.78).
+2025-07-17 19:58:38,277 - exchange_functions - WARNING - Senial en 2021-03-25 02:00:00 RECHAZADA por filtro de volumen (Umbral: 8374.84).
+2025-07-17 19:58:38,312 - exchange_functions - INFO - Senial en 2021-04-22 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,313 - exchange_functions - INFO - NUEVA OPERACION en 2021-04-22 02:00:00 a $53,760.82
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $2,533.60
+    - Costo Total (c/comision): $2,536.14
+    - SL: $51,744.42 | TP1: $55,021.15 | RR (TP1): 0.54
+2025-07-17 19:58:38,314 - exchange_functions - INFO - ALCANZADO TP1 en 2021-04-22 11:00:00 a $55,021.15. 
+    - P&L Parte 1: $27.13. SL movido a breakeven ($53868.45)
+2025-07-17 19:58:38,315 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-04-22 17:00:00 a $53,868.45. P&L Parte 2: $-0.00. Capital final $10,027.13
+2025-07-17 19:58:38,320 - exchange_functions - INFO - Senial en 2021-04-26 00:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,320 - exchange_functions - WARNING - Senial en 2021-04-26 00:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $49600.15 <= Entrada $50900.00).
+2025-07-17 19:58:38,346 - exchange_functions - WARNING - Senial en 2021-05-15 20:00:00 RECHAZADA por filtro de volumen (Umbral: 6735.63).
+2025-07-17 19:58:38,391 - exchange_functions - INFO - Senial en 2021-06-20 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,392 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-20 14:00:00 a $34,316.81
+    - Capital en Riesgo (1%): $100.27
+    - Tamanio Posicion (Bruto): $2,900.71
+    - Costo Total (c/comision): $2,903.61
+    - SL: $33,198.07 | TP1: $35,209.54 | RR (TP1): 0.69
+2025-07-17 19:58:38,393 - exchange_functions - INFO - ALCANZADO TP1 en 2021-06-20 19:00:00 a $35,209.54. 
+    - P&L Parte 1: $34.79. SL movido a breakeven ($34385.51)
+2025-07-17 19:58:38,394 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-06-21 04:00:00 a $34,385.51. P&L Parte 2: $0.00. Capital final $10,061.93
+2025-07-17 19:58:38,425 - exchange_functions - INFO - Senial en 2021-07-15 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,425 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-15 15:00:00 a $31,677.01
+    - Capital en Riesgo (1%): $100.62
+    - Tamanio Posicion (Bruto): $7,826.50
+    - Costo Total (c/comision): $7,834.32
+    - SL: $31,332.77 | TP1: $32,420.10 | RR (TP1): 1.67
+2025-07-17 19:58:38,426 - exchange_functions - WARNING - CIERRE por SL en 2021-07-15 17:00:00 a $31,332.77. P&L: $-100.62. Capital final $9,961.31
+2025-07-17 19:58:38,454 - exchange_functions - INFO - Senial en 2021-08-05 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,454 - exchange_functions - WARNING - Senial en 2021-08-05 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $39050.19 <= Entrada $39002.78).
+2025-07-17 19:58:38,498 - exchange_functions - INFO - Senial en 2021-09-10 17:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,498 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-10 17:00:00 a $45,711.08
+    - Capital en Riesgo (1%): $99.61
+    - Tamanio Posicion (Bruto): $4,824.24
+    - Costo Total (c/comision): $4,829.06
+    - SL: $44,857.79 | TP1: $46,195.08 | RR (TP1): 0.42
+2025-07-17 19:58:38,499 - exchange_functions - WARNING - CIERRE por SL en 2021-09-10 21:00:00 a $44,857.79. P&L: $-99.61. Capital final $9,861.69
+2025-07-17 19:58:38,516 - exchange_functions - WARNING - Senial en 2021-09-24 15:00:00 RECHAZADA por filtro de volumen (Umbral: 10420.86).
+2025-07-17 19:58:38,568 - exchange_functions - WARNING - Senial en 2021-11-06 15:00:00 RECHAZADA por filtro de volumen (Umbral: 2476.75).
+2025-07-17 19:58:38,577 - exchange_functions - WARNING - Senial en 2021-11-12 19:00:00 RECHAZADA por filtro de volumen (Umbral: 4208.79).
+2025-07-17 19:58:38,586 - exchange_functions - INFO - Senial en 2021-11-18 19:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,587 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-18 19:00:00 a $57,928.00
+    - Capital en Riesgo (1%): $98.62
+    - Tamanio Posicion (Bruto): $5,080.83
+    - Costo Total (c/comision): $5,085.91
+    - SL: $56,918.49 | TP1: $59,229.83 | RR (TP1): 1.05
+2025-07-17 19:58:38,588 - exchange_functions - WARNING - CIERRE por SL en 2021-11-18 22:00:00 a $56,918.49. P&L: $-98.62. Capital final $9,763.08
+2025-07-17 19:58:38,594 - exchange_functions - WARNING - Senial en 2021-11-22 07:00:00 RECHAZADA por filtro de volumen (Umbral: 3575.31).
+2025-07-17 19:58:38,623 - exchange_functions - INFO - Senial en 2021-12-15 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:38,624 - exchange_functions - WARNING - Senial en 2021-12-15 18:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-17 19:58:38,644 - exchange_functions - WARNING - Senial en 2021-12-31 22:00:00 RECHAZADA por filtro de volumen (Umbral: 2248.30).
+2025-07-17 19:58:38,645 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:38,645 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:58:38,646 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:38,646 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:58:38,647 - __main__ - INFO - Capital Final:      $9,763.08
+2025-07-17 19:58:38,647 - __main__ - INFO - Ganancia/Perdida:   $-236.92 (-2.37%)
+2025-07-17 19:58:38,647 - __main__ - INFO - Total de operaciones cerradas: 5
+2025-07-17 19:58:38,648 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:53,072 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:58:53,090 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:58:53,099 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:58:53,139 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:58:53,231 - exchange_functions - WARNING - Senial en 2021-03-16 15:00:00 RECHAZADA por filtro de volumen (Umbral: 4441.13).
+2025-07-17 19:58:53,242 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 19:58:53,246 - exchange_functions - WARNING - Senial en 2021-03-26 02:00:00 RECHAZADA por filtro de volumen (Umbral: 5535.71).
+2025-07-17 19:58:53,275 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 19:58:53,308 - exchange_functions - WARNING - Senial en 2021-05-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 8392.68).
+2025-07-17 19:58:53,314 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 19:58:53,330 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 19:58:53,339 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 19:58:53,346 - exchange_functions - WARNING - Senial en 2021-06-09 04:00:00 RECHAZADA por filtro de volumen (Umbral: 4536.37).
+2025-07-17 19:58:53,352 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 19:58:53,360 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 19:58:53,367 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 19:58:53,382 - exchange_functions - WARNING - Senial en 2021-07-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3051.68).
+2025-07-17 19:58:53,392 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:53,392 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 19:58:53,399 - exchange_functions - WARNING - Senial en 2021-07-13 22:00:00 RECHAZADA por filtro de volumen (Umbral: 3497.27).
+2025-07-17 19:58:53,424 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 19:58:53,428 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 19:58:53,447 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 19:58:53,465 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 19:58:53,477 - exchange_functions - WARNING - Senial en 2021-09-08 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5455.51).
+2025-07-17 19:58:53,495 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 19:58:53,506 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 19:58:53,560 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 19:58:53,568 - exchange_functions - WARNING - Senial en 2021-11-17 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2940.16).
+2025-07-17 19:58:53,577 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:53,577 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $5,584.51
+    - Costo Total (c/comision): $5,590.10
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 19:58:53,578 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.33. SL movido a breakeven ($56448.31)
+2025-07-17 19:58:53,579 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $32.40
+    - P&L Total Op.: $42.73 (0.76% ROI)
+    - Capital final: $10,042.73
+2025-07-17 19:58:53,592 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:58:53,592 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 19:58:53,604 - exchange_functions - WARNING - Senial en 2021-12-10 19:00:00 RECHAZADA por filtro de volumen (Umbral: 3553.62).
+2025-07-17 19:58:53,613 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 19:58:53,632 - exchange_functions - WARNING - Senial en 2021-12-29 22:00:00 RECHAZADA por filtro de volumen (Umbral: 2771.02).
+2025-07-17 19:58:53,635 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:53,635 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:58:53,635 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:58:53,635 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:58:53,636 - __main__ - INFO - Capital Final:      $10,042.73
+2025-07-17 19:58:53,636 - __main__ - INFO - Ganancia/Perdida:   $42.73 (0.43%)
+2025-07-17 19:58:53,636 - __main__ - INFO - Total de operaciones cerradas: 1
+2025-07-17 19:58:53,636 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:08,098 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:59:08,117 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:59:08,126 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:59:08,152 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:59:08,250 - exchange_functions - INFO - Senial en 2021-03-17 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,250 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-17 12:00:00 a $55,151.01
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $2,870.21
+    - Costo Total (c/comision): $2,873.08
+    - SL: $53,338.00 | TP1: $55,782.55 | RR (TP1): 0.27
+2025-07-17 19:59:08,251 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17 18:00:00 a $55,782.55. 
+    - P&L Parte 1: $13.55. SL movido a breakeven ($55261.42)
+2025-07-17 19:59:08,252 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-03-17 19:00:00 a $57,198.57.
+    - P&L Parte 2: $50.36
+    - P&L Total Op.: $63.90 (2.22% ROI)
+    - Capital final: $10,063.90
+2025-07-17 19:59:08,262 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 19:59:08,294 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 19:59:08,298 - exchange_functions - WARNING - Senial en 2021-04-19 18:00:00 RECHAZADA por filtro de volumen (Umbral: 6856.11).
+2025-07-17 19:59:08,330 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 19:59:08,336 - exchange_functions - WARNING - Senial en 2021-05-18 18:00:00 RECHAZADA por filtro de volumen (Umbral: 8637.70).
+2025-07-17 19:59:08,351 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 19:59:08,361 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 19:59:08,371 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 19:59:08,380 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 19:59:08,415 - exchange_functions - INFO - Senial en 2021-07-15 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,415 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-15 15:00:00 a $31,677.01
+    - Capital en Riesgo (1%): $100.64
+    - Tamanio Posicion (Bruto): $7,828.03
+    - Costo Total (c/comision): $7,835.86
+    - SL: $31,332.77 | TP1: $32,420.10 | RR (TP1): 1.67
+2025-07-17 19:59:08,416 - exchange_functions - WARNING - CIERRE por SL en 2021-07-15 17:00:00 a $31,332.77. P&L: $-100.64. Capital final $9,963.26
+2025-07-17 19:59:08,442 - exchange_functions - INFO - Senial en 2021-08-05 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,442 - exchange_functions - WARNING - Senial en 2021-08-05 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $39050.19 <= Entrada $39002.78).
+2025-07-17 19:59:08,460 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 19:59:08,473 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,473 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $99.63
+    - Tamanio Posicion (Bruto): $3,507.60
+    - Costo Total (c/comision): $3,511.11
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 19:59:08,476 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.54. SL movido a breakeven ($47037.74)
+2025-07-17 19:59:08,476 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.10
+    - P&L Total Op.: $63.64 (1.81% ROI)
+    - Capital final: $10,026.90
+2025-07-17 19:59:08,483 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 19:59:08,496 - exchange_functions - INFO - Senial en 2021-09-10 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,496 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-10 11:00:00 a $46,331.86
+    - Capital en Riesgo (1%): $100.27
+    - Tamanio Posicion (Bruto): $5,033.44
+    - Costo Total (c/comision): $5,038.47
+    - SL: $45,500.73 | TP1: $46,514.80 | RR (TP1): 0.10
+2025-07-17 19:59:08,497 - exchange_functions - WARNING - CIERRE por SL en 2021-09-10 14:00:00 a $45,500.73. P&L: $-100.27. Capital final $9,926.63
+2025-07-17 19:59:08,512 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 19:59:08,522 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 19:59:08,553 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,554 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $99.27
+    - Tamanio Posicion (Bruto): $5,837.71
+    - Costo Total (c/comision): $5,843.55
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 19:59:08,555 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $20.78. SL movido a breakeven ($60234.97)
+2025-07-17 19:59:08,557 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $56.64
+    - P&L Total Op.: $77.43 (1.32% ROI)
+    - Capital final: $10,004.06
+2025-07-17 19:59:08,583 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 19:59:08,593 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 19:59:08,602 - exchange_functions - WARNING - Senial en 2021-11-24 05:00:00 RECHAZADA por filtro de volumen (Umbral: 1754.52).
+2025-07-17 19:59:08,630 - exchange_functions - INFO - Senial en 2021-12-15 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:08,630 - exchange_functions - WARNING - Senial en 2021-12-15 18:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-17 19:59:08,651 - exchange_functions - WARNING - Senial en 2021-12-31 22:00:00 RECHAZADA por filtro de volumen (Umbral: 2248.30).
+2025-07-17 19:59:08,651 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:08,652 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:59:08,652 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:08,652 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:59:08,653 - __main__ - INFO - Capital Final:      $10,004.06
+2025-07-17 19:59:08,653 - __main__ - INFO - Ganancia/Perdida:   $4.06 (0.04%)
+2025-07-17 19:59:08,653 - __main__ - INFO - Total de operaciones cerradas: 5
+2025-07-17 19:59:08,653 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:21,588 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:59:21,606 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:59:21,615 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:59:21,647 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:59:21,737 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA por filtro de volumen (Umbral: 3862.95).
+2025-07-17 19:59:21,747 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 19:59:21,778 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 19:59:21,812 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 19:59:21,818 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 19:59:21,835 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 19:59:21,846 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 19:59:21,857 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 19:59:21,864 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 19:59:21,870 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 19:59:21,893 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:21,893 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 19:59:21,900 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 19:59:21,926 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 19:59:21,929 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 19:59:21,949 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 19:59:21,961 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:21,961 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $3,520.53
+    - Costo Total (c/comision): $3,524.05
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 19:59:21,965 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.67. SL movido a breakeven ($47037.74)
+2025-07-17 19:59:21,965 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.20
+    - P&L Total Op.: $63.87 (1.81% ROI)
+    - Capital final: $10,063.87
+2025-07-17 19:59:21,972 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 19:59:21,983 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA por filtro de volumen (Umbral: 2709.45).
+2025-07-17 19:59:22,000 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 19:59:22,012 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 19:59:22,042 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:22,043 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $100.64
+    - Tamanio Posicion (Bruto): $5,918.42
+    - Costo Total (c/comision): $5,924.34
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 19:59:22,043 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.07. SL movido a breakeven ($60234.97)
+2025-07-17 19:59:22,044 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.43
+    - P&L Total Op.: $78.50 (1.32% ROI)
+    - Capital final: $10,142.37
+2025-07-17 19:59:22,067 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 19:59:22,077 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 19:59:22,084 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:22,085 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $101.42
+    - Tamanio Posicion (Bruto): $5,664.02
+    - Costo Total (c/comision): $5,669.68
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 19:59:22,085 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.48. SL movido a breakeven ($56448.31)
+2025-07-17 19:59:22,086 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $32.86
+    - P&L Total Op.: $43.34 (0.76% ROI)
+    - Capital final: $10,185.71
+2025-07-17 19:59:22,099 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:22,099 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 19:59:22,112 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:22,112 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 19:59:22,118 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 19:59:22,138 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:22,138 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $101.86
+    - Tamanio Posicion (Bruto): $4,592.88
+    - Costo Total (c/comision): $4,597.47
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 19:59:22,139 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $28.98. SL movido a breakeven ($46755.37)
+2025-07-17 19:59:22,140 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.39
+    - P&L Total Op.: $79.37 (1.73% ROI)
+    - Capital final: $10,265.07
+2025-07-17 19:59:22,143 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:22,143 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:59:22,143 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:22,143 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:59:22,144 - __main__ - INFO - Capital Final:      $10,265.07
+2025-07-17 19:59:22,144 - __main__ - INFO - Ganancia/Perdida:   $265.07 (2.65%)
+2025-07-17 19:59:22,144 - __main__ - INFO - Total de operaciones cerradas: 4
+2025-07-17 19:59:22,144 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:39,581 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 19:59:39,600 - __main__ - INFO - Calculando indicadores...
+2025-07-17 19:59:39,609 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 19:59:39,644 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 19:59:39,733 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA por filtro de volumen (Umbral: 3862.95).
+2025-07-17 19:59:39,745 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 19:59:39,777 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 19:59:39,811 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 19:59:39,816 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 19:59:39,833 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 19:59:39,844 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 19:59:39,850 - exchange_functions - WARNING - Senial en 2021-06-09 04:00:00 RECHAZADA por filtro de volumen (Umbral: 4536.37).
+2025-07-17 19:59:39,858 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 19:59:39,867 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 19:59:39,873 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 19:59:39,888 - exchange_functions - WARNING - Senial en 2021-07-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3051.68).
+2025-07-17 19:59:39,898 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:39,899 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 19:59:39,907 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 19:59:39,932 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 19:59:39,936 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 19:59:39,956 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 19:59:39,967 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:39,968 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $3,520.53
+    - Costo Total (c/comision): $3,524.05
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 19:59:39,970 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.67. SL movido a breakeven ($47037.74)
+2025-07-17 19:59:39,971 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.20
+    - P&L Total Op.: $63.87 (1.81% ROI)
+    - Capital final: $10,063.87
+2025-07-17 19:59:39,979 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 19:59:39,990 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA por filtro de volumen (Umbral: 2709.45).
+2025-07-17 19:59:40,008 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 19:59:40,019 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 19:59:40,072 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 19:59:40,081 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 19:59:40,090 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:40,090 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $100.64
+    - Tamanio Posicion (Bruto): $5,620.18
+    - Costo Total (c/comision): $5,625.80
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 19:59:40,091 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.40. SL movido a breakeven ($56448.31)
+2025-07-17 19:59:40,092 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $32.61
+    - P&L Total Op.: $43.00 (0.76% ROI)
+    - Capital final: $10,106.88
+2025-07-17 19:59:40,104 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:40,105 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 19:59:40,116 - exchange_functions - WARNING - Senial en 2021-12-10 19:00:00 RECHAZADA por filtro de volumen (Umbral: 3553.62).
+2025-07-17 19:59:40,123 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 19:59:40,144 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 19:59:40,144 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $101.07
+    - Tamanio Posicion (Bruto): $4,557.33
+    - Costo Total (c/comision): $4,561.89
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 19:59:40,145 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $28.75. SL movido a breakeven ($46755.37)
+2025-07-17 19:59:40,146 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.00
+    - P&L Total Op.: $78.75 (1.73% ROI)
+    - Capital final: $10,185.63
+2025-07-17 19:59:40,149 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:40,149 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 19:59:40,149 - __main__ - INFO - -------------------------------------------
+2025-07-17 19:59:40,150 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 19:59:40,150 - __main__ - INFO - Capital Final:      $10,185.63
+2025-07-17 19:59:40,150 - __main__ - INFO - Ganancia/Perdida:   $185.63 (1.86%)
+2025-07-17 19:59:40,151 - __main__ - INFO - Total de operaciones cerradas: 3
+2025-07-17 19:59:40,151 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:35,860 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:01:35,878 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:01:35,887 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:01:35,928 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:01:35,954 - exchange_functions - WARNING - Senial en 2021-01-21 07:00:00 RECHAZADA por filtro de volumen (Umbral: 3616.65).
+2025-07-17 20:01:35,980 - exchange_functions - WARNING - Senial en 2021-02-11 05:00:00 RECHAZADA por filtro de volumen (Umbral: 7547.67).
+2025-07-17 20:01:36,001 - exchange_functions - WARNING - Senial en 2021-02-27 01:00:00 RECHAZADA por filtro de volumen (Umbral: 4925.37).
+2025-07-17 20:01:36,004 - exchange_functions - WARNING - Senial en 2021-02-28 20:00:00 RECHAZADA por filtro de volumen (Umbral: 6273.78).
+2025-07-17 20:01:36,024 - exchange_functions - INFO - Senial en 2021-03-16 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,024 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-16 03:00:00 a $54,272.86
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $3,603.63
+    - Costo Total (c/comision): $3,607.23
+    - SL: $52,873.94 | TP1: $55,949.16 | RR (TP1): 1.04
+2025-07-17 20:01:36,025 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-16 08:00:00 a $55,949.16. 
+    - P&L Parte 1: $51.99. SL movido a breakeven ($54381.51)
+2025-07-17 20:01:36,027 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-03-17 09:00:00 a $54,381.51. P&L Parte 2: $0.00. Capital final $10,051.99
+2025-07-17 20:01:36,037 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 20:01:36,070 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 20:01:36,074 - exchange_functions - WARNING - Senial en 2021-04-20 09:00:00 RECHAZADA por filtro de volumen (Umbral: 5760.55).
+2025-07-17 20:01:36,090 - exchange_functions - INFO - Senial en 2021-05-03 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,091 - exchange_functions - WARNING - Senial en 2021-05-03 01:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56820.89 <= Entrada $58042.82).
+2025-07-17 20:01:36,106 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 20:01:36,111 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 20:01:36,126 - exchange_functions - WARNING - Senial en 2021-05-29 00:00:00 RECHAZADA por filtro de volumen (Umbral: 8699.83).
+2025-07-17 20:01:36,130 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 20:01:36,141 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 20:01:36,151 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 20:01:36,158 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 20:01:36,164 - exchange_functions - INFO - Senial en 2021-06-21 09:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,164 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-21 09:00:00 a $33,163.08
+    - Capital en Riesgo (1%): $100.52
+    - Tamanio Posicion (Bruto): $1,774.55
+    - Costo Total (c/comision): $1,776.32
+    - SL: $31,349.06 | TP1: $34,607.75 | RR (TP1): 0.73
+2025-07-17 20:01:36,165 - exchange_functions - WARNING - CIERRE por SL en 2021-06-21 21:00:00 a $31,349.06. P&L: $-100.52. Capital final $9,951.47
+2025-07-17 20:01:36,167 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 20:01:36,174 - exchange_functions - INFO - Senial en 2021-06-26 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,175 - exchange_functions - WARNING - Senial en 2021-06-26 11:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $31710.35 <= Entrada $31777.73).
+2025-07-17 20:01:36,184 - exchange_functions - WARNING - Senial en 2021-07-02 06:00:00 RECHAZADA por filtro de volumen (Umbral: 4354.50).
+2025-07-17 20:01:36,195 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,195 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:01:36,202 - exchange_functions - INFO - Senial en 2021-07-13 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,203 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-13 15:00:00 a $32,790.08
+    - Capital en Riesgo (1%): $99.51
+    - Tamanio Posicion (Bruto): $5,204.83
+    - Costo Total (c/comision): $5,210.04
+    - SL: $32,228.16 | TP1: $32,960.19 | RR (TP1): 0.17
+2025-07-17 20:01:36,203 - exchange_functions - WARNING - CIERRE por SL en 2021-07-13 20:00:00 a $32,228.16. P&L: $-99.51. Capital final $9,851.96
+2025-07-17 20:01:36,206 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 20:01:36,212 - exchange_functions - INFO - Senial en 2021-07-16 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,212 - exchange_functions - WARNING - Senial en 2021-07-16 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $31678.57 <= Entrada $31860.93).
+2025-07-17 20:01:36,234 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 20:01:36,239 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 20:01:36,257 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 20:01:36,266 - exchange_functions - WARNING - Senial en 2021-08-25 12:00:00 RECHAZADA por filtro de volumen (Umbral: 2938.68).
+2025-07-17 20:01:36,276 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 20:01:36,286 - exchange_functions - INFO - Senial en 2021-09-08 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,286 - exchange_functions - WARNING - Senial en 2021-09-08 10:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $46523.15 <= Entrada $46463.70).
+2025-07-17 20:01:36,304 - exchange_functions - INFO - Senial en 2021-09-21 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,304 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-21 03:00:00 a $42,683.01
+    - Capital en Riesgo (1%): $98.52
+    - Tamanio Posicion (Bruto): $4,016.29
+    - Costo Total (c/comision): $4,020.30
+    - SL: $41,720.40 | TP1: $43,601.74 | RR (TP1): 0.80
+2025-07-17 20:01:36,305 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-21 10:00:00 a $43,601.74. 
+    - P&L Parte 1: $39.16. SL movido a breakeven ($42768.46)
+2025-07-17 20:01:36,306 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-21 14:00:00 a $42,768.46. P&L Parte 2: $-0.00. Capital final $9,891.12
+2025-07-17 20:01:36,308 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 20:01:36,318 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 20:01:36,326 - exchange_functions - INFO - Senial en 2021-10-04 17:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,326 - exchange_functions - WARNING - Senial en 2021-10-04 17:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47880.06 <= Entrada $49296.44).
+2025-07-17 20:01:36,338 - exchange_functions - INFO - Senial en 2021-10-13 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,339 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-13 10:00:00 a $54,657.87
+    - Capital en Riesgo (1%): $98.91
+    - Tamanio Posicion (Bruto): $5,162.81
+    - Costo Total (c/comision): $5,167.97
+    - SL: $53,719.09 | TP1: $55,675.93 | RR (TP1): 0.87
+2025-07-17 20:01:36,340 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-13 14:00:00 a $55,675.93. 
+    - P&L Parte 1: $42.87. SL movido a breakeven ($54767.30)
+2025-07-17 20:01:36,341 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-13 16:00:00 a $56,864.61.
+    - P&L Parte 2: $98.95
+    - P&L Total Op.: $141.82 (2.74% ROI)
+    - Capital final: $10,032.95
+2025-07-17 20:01:36,355 - exchange_functions - INFO - Senial en 2021-10-23 13:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,355 - exchange_functions - WARNING - Senial en 2021-10-23 13:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $60952.84 <= Entrada $61322.06).
+2025-07-17 20:01:36,358 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,358 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $100.33
+    - Tamanio Posicion (Bruto): $5,900.23
+    - Costo Total (c/comision): $5,906.13
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:01:36,359 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.00. SL movido a breakeven ($60234.97)
+2025-07-17 20:01:36,359 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.25
+    - P&L Total Op.: $78.26 (1.32% ROI)
+    - Capital final: $10,111.20
+2025-07-17 20:01:36,365 - exchange_functions - WARNING - Senial en 2021-10-28 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2555.55).
+2025-07-17 20:01:36,372 - exchange_functions - INFO - Senial en 2021-11-01 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,372 - exchange_functions - WARNING - Senial en 2021-11-01 06:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $60745.39 <= Entrada $60741.76).
+2025-07-17 20:01:36,388 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 20:01:36,396 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 20:01:36,403 - exchange_functions - WARNING - Senial en 2021-11-22 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3618.23).
+2025-07-17 20:01:36,418 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,418 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 20:01:36,431 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,432 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 20:01:36,438 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 20:01:36,444 - exchange_functions - WARNING - Senial en 2021-12-18 04:00:00 RECHAZADA por filtro de volumen (Umbral: 2125.94).
+2025-07-17 20:01:36,459 - exchange_functions - INFO - Senial en 2021-12-29 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,459 - exchange_functions - WARNING - Senial en 2021-12-29 15:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47714.26 <= Entrada $47959.36).
+2025-07-17 20:01:36,461 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:36,461 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $101.11
+    - Tamanio Posicion (Bruto): $4,559.28
+    - Costo Total (c/comision): $4,563.84
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 20:01:36,462 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $28.76. SL movido a breakeven ($46755.37)
+2025-07-17 20:01:36,464 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.02
+    - P&L Total Op.: $78.79 (1.73% ROI)
+    - Capital final: $10,189.99
+2025-07-17 20:01:36,466 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:36,466 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:01:36,466 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:36,467 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:01:36,467 - __main__ - INFO - Capital Final:      $10,189.99
+2025-07-17 20:01:36,467 - __main__ - INFO - Ganancia/Perdida:   $189.99 (1.90%)
+2025-07-17 20:01:36,467 - __main__ - INFO - Total de operaciones cerradas: 7
+2025-07-17 20:01:36,467 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:48,930 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:01:48,949 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:01:48,958 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:01:48,997 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:01:49,022 - exchange_functions - WARNING - Senial en 2021-01-21 07:00:00 RECHAZADA por filtro de volumen (Umbral: 3616.65).
+2025-07-17 20:01:49,048 - exchange_functions - WARNING - Senial en 2021-02-11 05:00:00 RECHAZADA por filtro de volumen (Umbral: 7547.67).
+2025-07-17 20:01:49,069 - exchange_functions - WARNING - Senial en 2021-02-27 01:00:00 RECHAZADA por filtro de volumen (Umbral: 4925.37).
+2025-07-17 20:01:49,074 - exchange_functions - WARNING - Senial en 2021-02-28 20:00:00 RECHAZADA por filtro de volumen (Umbral: 6273.78).
+2025-07-17 20:01:49,095 - exchange_functions - INFO - Senial en 2021-03-16 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,096 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-16 03:00:00 a $54,272.86
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $3,603.63
+    - Costo Total (c/comision): $3,607.23
+    - SL: $52,873.94 | TP1: $55,949.16 | RR (TP1): 1.04
+2025-07-17 20:01:49,097 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-16 08:00:00 a $55,949.16. 
+    - P&L Parte 1: $51.99. SL movido a breakeven ($54381.51)
+2025-07-17 20:01:49,099 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-03-17 09:00:00 a $54,381.51. P&L Parte 2: $0.00. Capital final $10,051.99
+2025-07-17 20:01:49,108 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 20:01:49,139 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 20:01:49,144 - exchange_functions - WARNING - Senial en 2021-04-20 09:00:00 RECHAZADA por filtro de volumen (Umbral: 5760.55).
+2025-07-17 20:01:49,163 - exchange_functions - INFO - Senial en 2021-05-03 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,163 - exchange_functions - WARNING - Senial en 2021-05-03 01:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56820.89 <= Entrada $58042.82).
+2025-07-17 20:01:49,180 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 20:01:49,185 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 20:01:49,199 - exchange_functions - WARNING - Senial en 2021-05-29 00:00:00 RECHAZADA por filtro de volumen (Umbral: 8699.83).
+2025-07-17 20:01:49,202 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 20:01:49,212 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 20:01:49,222 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 20:01:49,229 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 20:01:49,234 - exchange_functions - INFO - Senial en 2021-06-21 09:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,235 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-21 09:00:00 a $33,163.08
+    - Capital en Riesgo (1%): $100.52
+    - Tamanio Posicion (Bruto): $1,774.55
+    - Costo Total (c/comision): $1,776.32
+    - SL: $31,349.06 | TP1: $34,607.75 | RR (TP1): 0.73
+2025-07-17 20:01:49,237 - exchange_functions - WARNING - CIERRE por SL en 2021-06-21 21:00:00 a $31,349.06. P&L: $-100.52. Capital final $9,951.47
+2025-07-17 20:01:49,238 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 20:01:49,245 - exchange_functions - INFO - Senial en 2021-06-26 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,245 - exchange_functions - WARNING - Senial en 2021-06-26 11:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $31710.35 <= Entrada $31777.73).
+2025-07-17 20:01:49,254 - exchange_functions - WARNING - Senial en 2021-07-02 06:00:00 RECHAZADA por filtro de volumen (Umbral: 4354.50).
+2025-07-17 20:01:49,265 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,265 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:01:49,272 - exchange_functions - INFO - Senial en 2021-07-13 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,272 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-13 15:00:00 a $32,790.08
+    - Capital en Riesgo (1%): $99.51
+    - Tamanio Posicion (Bruto): $5,204.83
+    - Costo Total (c/comision): $5,210.04
+    - SL: $32,228.16 | TP1: $32,960.19 | RR (TP1): 0.17
+2025-07-17 20:01:49,274 - exchange_functions - WARNING - CIERRE por SL en 2021-07-13 20:00:00 a $32,228.16. P&L: $-99.51. Capital final $9,851.96
+2025-07-17 20:01:49,276 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 20:01:49,280 - exchange_functions - INFO - Senial en 2021-07-16 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,281 - exchange_functions - WARNING - Senial en 2021-07-16 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $31678.57 <= Entrada $31860.93).
+2025-07-17 20:01:49,306 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 20:01:49,310 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 20:01:49,329 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 20:01:49,339 - exchange_functions - WARNING - Senial en 2021-08-25 12:00:00 RECHAZADA por filtro de volumen (Umbral: 2938.68).
+2025-07-17 20:01:49,348 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 20:01:49,359 - exchange_functions - INFO - Senial en 2021-09-08 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,359 - exchange_functions - WARNING - Senial en 2021-09-08 10:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $46523.15 <= Entrada $46463.70).
+2025-07-17 20:01:49,376 - exchange_functions - INFO - Senial en 2021-09-21 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,376 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-21 03:00:00 a $42,683.01
+    - Capital en Riesgo (1%): $98.52
+    - Tamanio Posicion (Bruto): $4,016.29
+    - Costo Total (c/comision): $4,020.30
+    - SL: $41,720.40 | TP1: $43,601.74 | RR (TP1): 0.80
+2025-07-17 20:01:49,377 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-21 10:00:00 a $43,601.74. 
+    - P&L Parte 1: $39.16. SL movido a breakeven ($42768.46)
+2025-07-17 20:01:49,378 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-21 14:00:00 a $42,768.46. P&L Parte 2: $-0.00. Capital final $9,891.12
+2025-07-17 20:01:49,380 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 20:01:49,391 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 20:01:49,398 - exchange_functions - INFO - Senial en 2021-10-04 17:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,398 - exchange_functions - WARNING - Senial en 2021-10-04 17:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47880.06 <= Entrada $49296.44).
+2025-07-17 20:01:49,411 - exchange_functions - INFO - Senial en 2021-10-13 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,411 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-13 10:00:00 a $54,657.87
+    - Capital en Riesgo (1%): $98.91
+    - Tamanio Posicion (Bruto): $5,162.81
+    - Costo Total (c/comision): $5,167.97
+    - SL: $53,719.09 | TP1: $55,675.93 | RR (TP1): 0.87
+2025-07-17 20:01:49,412 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-13 14:00:00 a $55,675.93. 
+    - P&L Parte 1: $42.87. SL movido a breakeven ($54767.30)
+2025-07-17 20:01:49,412 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-13 16:00:00 a $56,864.61.
+    - P&L Parte 2: $98.95
+    - P&L Total Op.: $141.82 (2.74% ROI)
+    - Capital final: $10,032.95
+2025-07-17 20:01:49,425 - exchange_functions - INFO - Senial en 2021-10-23 13:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,425 - exchange_functions - WARNING - Senial en 2021-10-23 13:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $60952.84 <= Entrada $61322.06).
+2025-07-17 20:01:49,429 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,429 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $100.33
+    - Tamanio Posicion (Bruto): $5,900.23
+    - Costo Total (c/comision): $5,906.13
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:01:49,430 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.00. SL movido a breakeven ($60234.97)
+2025-07-17 20:01:49,430 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.25
+    - P&L Total Op.: $78.26 (1.32% ROI)
+    - Capital final: $10,111.20
+2025-07-17 20:01:49,435 - exchange_functions - WARNING - Senial en 2021-10-28 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2555.55).
+2025-07-17 20:01:49,442 - exchange_functions - INFO - Senial en 2021-11-01 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,443 - exchange_functions - WARNING - Senial en 2021-11-01 06:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $60745.39 <= Entrada $60741.76).
+2025-07-17 20:01:49,458 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 20:01:49,466 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 20:01:49,473 - exchange_functions - WARNING - Senial en 2021-11-22 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3618.23).
+2025-07-17 20:01:49,488 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,488 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 20:01:49,499 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,499 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 20:01:49,507 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 20:01:49,514 - exchange_functions - WARNING - Senial en 2021-12-18 04:00:00 RECHAZADA por filtro de volumen (Umbral: 2125.94).
+2025-07-17 20:01:49,529 - exchange_functions - INFO - Senial en 2021-12-29 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,529 - exchange_functions - WARNING - Senial en 2021-12-29 15:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47714.26 <= Entrada $47959.36).
+2025-07-17 20:01:49,531 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:49,531 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $101.11
+    - Tamanio Posicion (Bruto): $4,559.28
+    - Costo Total (c/comision): $4,563.84
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 20:01:49,532 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $28.76. SL movido a breakeven ($46755.37)
+2025-07-17 20:01:49,532 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.02
+    - P&L Total Op.: $78.79 (1.73% ROI)
+    - Capital final: $10,189.99
+2025-07-17 20:01:49,534 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:49,535 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:01:49,535 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:49,535 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:01:49,535 - __main__ - INFO - Capital Final:      $10,189.99
+2025-07-17 20:01:49,536 - __main__ - INFO - Ganancia/Perdida:   $189.99 (1.90%)
+2025-07-17 20:01:49,536 - __main__ - INFO - Total de operaciones cerradas: 7
+2025-07-17 20:01:49,536 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:01:59,630 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:01:59,648 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:01:59,657 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:01:59,686 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:01:59,774 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA por filtro de volumen (Umbral: 3862.95).
+2025-07-17 20:01:59,785 - exchange_functions - WARNING - Senial en 2021-03-25 02:00:00 RECHAZADA por filtro de volumen (Umbral: 8374.84).
+2025-07-17 20:01:59,815 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 20:01:59,850 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 20:01:59,856 - exchange_functions - WARNING - Senial en 2021-05-18 18:00:00 RECHAZADA por filtro de volumen (Umbral: 8637.70).
+2025-07-17 20:01:59,871 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 20:01:59,880 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 20:01:59,901 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 20:01:59,923 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:59,924 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:01:59,930 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 20:01:59,957 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 20:01:59,976 - exchange_functions - INFO - Senial en 2021-08-19 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:59,977 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-19 06:00:00 a $44,380.61
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $6,090.52
+    - Costo Total (c/comision): $6,096.61
+    - SL: $43,740.05 | TP1: $44,921.57 | RR (TP1): 0.62
+2025-07-17 20:01:59,978 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-19 08:00:00 a $44,921.57. 
+    - P&L Parte 1: $30.99. SL movido a breakeven ($44469.46)
+2025-07-17 20:01:59,978 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-08-19 10:00:00 a $44,469.46. P&L Parte 2: $0.00. Capital final $10,030.99
+2025-07-17 20:01:59,989 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:01:59,989 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $100.31
+    - Tamanio Posicion (Bruto): $3,531.44
+    - Costo Total (c/comision): $3,534.97
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 20:01:59,991 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.78. SL movido a breakeven ($47037.74)
+2025-07-17 20:01:59,991 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.29
+    - P&L Total Op.: $64.07 (1.81% ROI)
+    - Capital final: $10,095.06
+2025-07-17 20:02:00,008 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA por filtro de volumen (Umbral: 2709.45).
+2025-07-17 20:02:00,025 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 20:02:00,065 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:00,066 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $100.95
+    - Tamanio Posicion (Bruto): $5,936.76
+    - Costo Total (c/comision): $5,942.70
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:02:00,066 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.13. SL movido a breakeven ($60234.97)
+2025-07-17 20:02:00,067 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.61
+    - P&L Total Op.: $78.74 (1.32% ROI)
+    - Capital final: $10,173.80
+2025-07-17 20:02:00,085 - exchange_functions - WARNING - Senial en 2021-11-06 15:00:00 RECHAZADA por filtro de volumen (Umbral: 2476.75).
+2025-07-17 20:02:00,093 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 20:02:00,103 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 20:02:00,111 - exchange_functions - WARNING - Senial en 2021-11-24 05:00:00 RECHAZADA por filtro de volumen (Umbral: 1754.52).
+2025-07-17 20:02:00,158 - exchange_functions - WARNING - Senial en 2021-12-31 05:00:00 RECHAZADA por filtro de volumen (Umbral: 1657.28).
+2025-07-17 20:02:00,160 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:02:00,160 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:02:00,161 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:02:00,161 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:02:00,161 - __main__ - INFO - Capital Final:      $10,173.80
+2025-07-17 20:02:00,161 - __main__ - INFO - Ganancia/Perdida:   $173.80 (1.74%)
+2025-07-17 20:02:00,161 - __main__ - INFO - Total de operaciones cerradas: 3
+2025-07-17 20:02:00,161 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:02:10,090 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:02:10,110 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:02:10,119 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:02:10,151 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:02:10,241 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA por filtro de volumen (Umbral: 3862.95).
+2025-07-17 20:02:10,252 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 20:02:10,284 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 20:02:10,318 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 20:02:10,324 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 20:02:10,342 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 20:02:10,352 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 20:02:10,363 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 20:02:10,370 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 20:02:10,376 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 20:02:10,399 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,399 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:02:10,406 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 20:02:10,431 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 20:02:10,434 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 20:02:10,453 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 20:02:10,464 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,465 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $3,520.53
+    - Costo Total (c/comision): $3,524.05
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 20:02:10,467 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.67. SL movido a breakeven ($47037.74)
+2025-07-17 20:02:10,467 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.20
+    - P&L Total Op.: $63.87 (1.81% ROI)
+    - Capital final: $10,063.87
+2025-07-17 20:02:10,474 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 20:02:10,485 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA por filtro de volumen (Umbral: 2709.45).
+2025-07-17 20:02:10,502 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 20:02:10,513 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 20:02:10,545 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,546 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $100.64
+    - Tamanio Posicion (Bruto): $5,918.42
+    - Costo Total (c/comision): $5,924.34
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:02:10,546 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.07. SL movido a breakeven ($60234.97)
+2025-07-17 20:02:10,547 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.43
+    - P&L Total Op.: $78.50 (1.32% ROI)
+    - Capital final: $10,142.37
+2025-07-17 20:02:10,570 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 20:02:10,580 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 20:02:10,588 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,588 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $101.42
+    - Tamanio Posicion (Bruto): $5,664.02
+    - Costo Total (c/comision): $5,669.68
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 20:02:10,589 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.48. SL movido a breakeven ($56448.31)
+2025-07-17 20:02:10,590 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $32.86
+    - P&L Total Op.: $43.34 (0.76% ROI)
+    - Capital final: $10,185.71
+2025-07-17 20:02:10,603 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,603 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 20:02:10,616 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,616 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 20:02:10,622 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 20:02:10,643 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:02:10,643 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $101.86
+    - Tamanio Posicion (Bruto): $4,592.88
+    - Costo Total (c/comision): $4,597.47
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 20:02:10,645 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $28.98. SL movido a breakeven ($46755.37)
+2025-07-17 20:02:10,646 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.39
+    - P&L Total Op.: $79.37 (1.73% ROI)
+    - Capital final: $10,265.07
+2025-07-17 20:02:10,648 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:02:10,648 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:02:10,648 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:02:10,648 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:02:10,649 - __main__ - INFO - Capital Final:      $10,265.07
+2025-07-17 20:02:10,649 - __main__ - INFO - Ganancia/Perdida:   $265.07 (2.65%)
+2025-07-17 20:02:10,649 - __main__ - INFO - Total de operaciones cerradas: 4
+2025-07-17 20:02:10,650 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:17,557 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:04:17,575 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:04:17,584 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:04:17,615 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:04:17,706 - exchange_functions - INFO - Senial en 2021-03-17 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,707 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $55862.42 <= Entrada $56306.84).
+2025-07-17 20:04:17,717 - exchange_functions - INFO - Senial en 2021-03-24 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,718 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-24 03:00:00 a $54,350.54
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $4,935.46
+    - Costo Total (c/comision): $4,940.40
+    - SL: $53,357.02 | TP1: $54,747.85 | RR (TP1): 0.26
+2025-07-17 20:04:17,719 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-24 06:00:00 a $54,747.85. 
+    - P&L Parte 1: $13.09. SL movido a breakeven ($54459.35)
+2025-07-17 20:04:17,720 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-03-24 08:00:00 a $55,805.60.
+    - P&L Parte 2: $61.06
+    - P&L Total Op.: $74.15 (1.50% ROI)
+    - Capital final: $10,074.15
+2025-07-17 20:04:17,751 - exchange_functions - INFO - Senial en 2021-04-17 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,752 - exchange_functions - INFO - NUEVA OPERACION en 2021-04-17 20:00:00 a $60,802.38
+    - Capital en Riesgo (1%): $100.74
+    - Tamanio Posicion (Bruto): $6,613.89
+    - Costo Total (c/comision): $6,620.51
+    - SL: $59,997.05 | TP1: $61,310.84 | RR (TP1): 0.42
+2025-07-17 20:04:17,752 - exchange_functions - WARNING - CIERRE por SL en 2021-04-17 23:00:00 a $59,997.05. P&L: $-100.74. Capital final $9,973.41
+2025-07-17 20:04:17,785 - exchange_functions - INFO - Senial en 2021-05-14 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,786 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-14 23:00:00 a $49,841.45
+    - Capital en Riesgo (1%): $99.73
+    - Tamanio Posicion (Bruto): $5,220.50
+    - Costo Total (c/comision): $5,225.72
+    - SL: $48,988.09 | TP1: $50,198.06 | RR (TP1): 0.27
+2025-07-17 20:04:17,786 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-15 00:00:00 a $50,198.06. 
+    - P&L Parte 1: $13.44. SL movido a breakeven ($49941.23)
+2025-07-17 20:04:17,787 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-05-15 01:00:00 a $49,941.23. P&L Parte 2: $0.00. Capital final $9,986.85
+2025-07-17 20:04:17,791 - exchange_functions - INFO - Senial en 2021-05-17 19:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,792 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-17 19:00:00 a $44,197.73
+    - Capital en Riesgo (1%): $99.87
+    - Tamanio Posicion (Bruto): $2,162.02
+    - Costo Total (c/comision): $2,164.18
+    - SL: $42,242.58 | TP1: $44,329.29 | RR (TP1): 0.02
+2025-07-17 20:04:17,793 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-17 20:00:00 a $44,329.29. 
+    - P&L Parte 1: $1.05. SL movido a breakeven ($44286.21)
+2025-07-17 20:04:17,794 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-05-17 21:00:00 a $44,286.21. P&L Parte 2: $0.00. Capital final $9,987.90
+2025-07-17 20:04:17,809 - exchange_functions - INFO - Senial en 2021-05-29 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,810 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-29 20:00:00 a $34,234.18
+    - Capital en Riesgo (1%): $99.88
+    - Tamanio Posicion (Bruto): $2,435.22
+    - Costo Total (c/comision): $2,437.66
+    - SL: $32,897.22 | TP1: $35,296.09 | RR (TP1): 0.71
+2025-07-17 20:04:17,811 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-30 05:00:00 a $35,296.09. 
+    - P&L Parte 1: $35.30. SL movido a breakeven ($34302.72)
+2025-07-17 20:04:17,812 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-05-30 06:00:00 a $35,486.09.
+    - P&L Parte 2: $42.05
+    - P&L Total Op.: $77.34 (3.17% ROI)
+    - Capital final: $10,065.24
+2025-07-17 20:04:17,821 - exchange_functions - INFO - Senial en 2021-06-05 17:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,822 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-05 17:00:00 a $36,021.11
+    - Capital en Riesgo (1%): $100.65
+    - Tamanio Posicion (Bruto): $4,433.13
+    - Costo Total (c/comision): $4,437.57
+    - SL: $35,274.56 | TP1: $36,856.39 | RR (TP1): 0.93
+2025-07-17 20:04:17,823 - exchange_functions - WARNING - CIERRE por SL en 2021-06-05 21:00:00 a $35,274.56. P&L: $-100.65. Capital final $9,964.59
+2025-07-17 20:04:17,834 - exchange_functions - INFO - Senial en 2021-06-13 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,834 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-13 06:00:00 a $35,378.25
+    - Capital en Riesgo (1%): $99.65
+    - Tamanio Posicion (Bruto): $3,428.56
+    - Costo Total (c/comision): $3,431.99
+    - SL: $34,419.83 | TP1: $35,598.29 | RR (TP1): 0.14
+2025-07-17 20:04:17,835 - exchange_functions - INFO - ALCANZADO TP1 en 2021-06-13 08:00:00 a $35,598.29. 
+    - P&L Parte 1: $7.22. SL movido a breakeven ($35449.08)
+2025-07-17 20:04:17,836 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-06-13 16:00:00 a $36,179.60.
+    - P&L Parte 2: $35.36
+    - P&L Total Op.: $42.59 (1.24% ROI)
+    - Capital final: $10,007.17
+2025-07-17 20:04:17,842 - exchange_functions - INFO - Senial en 2021-06-17 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,843 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-17 20:00:00 a $37,755.66
+    - Capital en Riesgo (1%): $100.07
+    - Tamanio Posicion (Bruto): $4,037.45
+    - Costo Total (c/comision): $4,041.49
+    - SL: $36,894.50 | TP1: $38,708.88 | RR (TP1): 0.94
+2025-07-17 20:04:17,845 - exchange_functions - WARNING - CIERRE por SL en 2021-06-18 14:00:00 a $36,894.50. P&L: $-100.07. Capital final $9,907.10
+2025-07-17 20:04:17,850 - exchange_functions - INFO - Senial en 2021-06-22 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,851 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32445.69 <= Entrada $32622.65).
+2025-07-17 20:04:17,874 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,874 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:04:17,883 - exchange_functions - INFO - Senial en 2021-07-14 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,883 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-14 06:00:00 a $31,835.47
+    - Capital en Riesgo (1%): $99.07
+    - Tamanio Posicion (Bruto): $6,734.13
+    - Costo Total (c/comision): $6,740.87
+    - SL: $31,430.38 | TP1: $32,443.05 | RR (TP1): 1.16
+2025-07-17 20:04:17,884 - exchange_functions - INFO - ALCANZADO TP1 en 2021-07-14 09:00:00 a $32,443.05. 
+    - P&L Parte 1: $57.46. SL movido a breakeven ($31899.20)
+2025-07-17 20:04:17,885 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-07-14 18:00:00 a $33,074.68.
+    - P&L Parte 2: $124.20
+    - P&L Total Op.: $181.66 (2.69% ROI)
+    - Capital final: $10,088.76
+2025-07-17 20:04:17,910 - exchange_functions - INFO - Senial en 2021-08-02 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,911 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-02 23:00:00 a $39,147.82
+    - Capital en Riesgo (1%): $100.89
+    - Tamanio Posicion (Bruto): $6,331.32
+    - Costo Total (c/comision): $6,337.65
+    - SL: $38,601.76 | TP1: $39,564.10 | RR (TP1): 0.54
+2025-07-17 20:04:17,912 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-03 00:00:00 a $39,564.10. 
+    - P&L Parte 1: $27.30. SL movido a breakeven ($39226.19)
+2025-07-17 20:04:17,913 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-08-03 01:00:00 a $39,226.19. P&L Parte 2: $0.00. Capital final $10,116.06
+2025-07-17 20:04:17,916 - exchange_functions - INFO - Senial en 2021-08-04 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,917 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $38092.25 <= Entrada $38160.06).
+2025-07-17 20:04:17,936 - exchange_functions - INFO - Senial en 2021-08-18 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,936 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-18 23:00:00 a $44,705.29
+    - Capital en Riesgo (1%): $101.16
+    - Tamanio Posicion (Bruto): $7,517.98
+    - Costo Total (c/comision): $7,525.50
+    - SL: $44,192.64 | TP1: $45,177.33 | RR (TP1): 0.64
+2025-07-17 20:04:17,937 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-19 01:00:00 a $45,177.33. 
+    - P&L Parte 1: $32.13. SL movido a breakeven ($44794.79)
+2025-07-17 20:04:17,937 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-08-19 02:00:00 a $44,794.79. P&L Parte 2: $0.00. Capital final $10,148.20
+2025-07-17 20:04:17,948 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,949 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $101.48
+    - Tamanio Posicion (Bruto): $3,572.70
+    - Costo Total (c/comision): $3,576.28
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 20:04:17,952 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $36.20. SL movido a breakeven ($47037.74)
+2025-07-17 20:04:17,952 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.62
+    - P&L Total Op.: $64.82 (1.81% ROI)
+    - Capital final: $10,213.01
+2025-07-17 20:04:17,959 - exchange_functions - INFO - Senial en 2021-09-01 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,960 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-01 03:00:00 a $47,043.65
+    - Capital en Riesgo (1%): $102.13
+    - Tamanio Posicion (Bruto): $5,506.86
+    - Costo Total (c/comision): $5,512.37
+    - SL: $46,264.49 | TP1: $47,277.72 | RR (TP1): 0.16
+2025-07-17 20:04:17,961 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-01 05:00:00 a $47,277.72. 
+    - P&L Parte 1: $8.18. SL movido a breakeven ($47137.83)
+2025-07-17 20:04:17,962 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-01 07:00:00 a $47,137.83. P&L Parte 2: $0.00. Capital final $10,221.19
+2025-07-17 20:04:17,973 - exchange_functions - INFO - Senial en 2021-09-09 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,973 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $46213.48 <= Entrada $46304.44).
+2025-07-17 20:04:17,992 - exchange_functions - INFO - Senial en 2021-09-22 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:17,992 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-22 01:00:00 a $42,199.99
+    - Capital en Riesgo (1%): $102.21
+    - Tamanio Posicion (Bruto): $1,742.19
+    - Costo Total (c/comision): $1,743.93
+    - SL: $39,806.18 | TP1: $42,312.18 | RR (TP1): 0.01
+2025-07-17 20:04:17,993 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-22 03:00:00 a $42,312.18. 
+    - P&L Parte 1: $0.57. SL movido a breakeven ($42284.47)
+2025-07-17 20:04:17,993 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-22 04:00:00 a $42,284.47. P&L Parte 2: $-0.00. Capital final $10,221.77
+2025-07-17 20:04:18,004 - exchange_functions - INFO - Senial en 2021-09-29 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,005 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-29 23:00:00 a $41,524.28
+    - Capital en Riesgo (1%): $102.22
+    - Tamanio Posicion (Bruto): $5,844.64
+    - Costo Total (c/comision): $5,850.48
+    - SL: $40,880.46 | TP1: $41,828.84 | RR (TP1): 0.30
+2025-07-17 20:04:18,005 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-30 00:00:00 a $41,828.84. 
+    - P&L Parte 1: $15.57. SL movido a breakeven ($41607.41)
+2025-07-17 20:04:18,006 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-09-30 01:00:00 a $42,847.62.
+    - P&L Parte 2: $87.19
+    - P&L Total Op.: $102.76 (1.76% ROI)
+    - Capital final: $10,324.53
+2025-07-17 20:04:18,037 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,037 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $103.25
+    - Tamanio Posicion (Bruto): $6,071.70
+    - Costo Total (c/comision): $6,077.78
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:04:18,038 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.61. SL movido a breakeven ($60234.97)
+2025-07-17 20:04:18,039 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $58.92
+    - P&L Total Op.: $80.53 (1.32% ROI)
+    - Capital final: $10,405.06
+2025-07-17 20:04:18,063 - exchange_functions - INFO - Senial en 2021-11-12 13:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,064 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-12 13:00:00 a $63,982.09
+    - Capital en Riesgo (1%): $104.05
+    - Tamanio Posicion (Bruto): $4,384.24
+    - Costo Total (c/comision): $4,388.62
+    - SL: $62,590.18 | TP1: $64,596.02 | RR (TP1): 0.32
+2025-07-17 20:04:18,064 - exchange_functions - WARNING - CIERRE por SL en 2021-11-12 16:00:00 a $62,590.18. P&L: $-104.05. Capital final $10,301.01
+2025-07-17 20:04:18,072 - exchange_functions - INFO - Senial en 2021-11-18 07:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,073 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-18 07:00:00 a $59,734.20
+    - Capital en Riesgo (1%): $103.01
+    - Tamanio Posicion (Bruto): $6,226.55
+    - Costo Total (c/comision): $6,232.78
+    - SL: $58,864.58 | TP1: $60,127.35 | RR (TP1): 0.28
+2025-07-17 20:04:18,074 - exchange_functions - WARNING - CIERRE por SL en 2021-11-18 13:00:00 a $58,864.58. P&L: $-103.01. Capital final $10,198.00
+2025-07-17 20:04:18,082 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,083 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $101.98
+    - Tamanio Posicion (Bruto): $5,695.08
+    - Costo Total (c/comision): $5,700.78
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 20:04:18,084 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.53. SL movido a breakeven ($56448.31)
+2025-07-17 20:04:18,085 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $33.04
+    - P&L Total Op.: $43.58 (0.76% ROI)
+    - Capital final: $10,241.57
+2025-07-17 20:04:18,098 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,098 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 20:04:18,110 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,110 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 20:04:18,117 - exchange_functions - INFO - Senial en 2021-12-14 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,118 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47046.82 <= Entrada $47785.20).
+2025-07-17 20:04:18,138 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:18,138 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $102.42
+    - Tamanio Posicion (Bruto): $4,618.07
+    - Costo Total (c/comision): $4,622.69
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 20:04:18,140 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $29.14. SL movido a breakeven ($46755.37)
+2025-07-17 20:04:18,141 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.67
+    - P&L Total Op.: $79.80 (1.73% ROI)
+    - Capital final: $10,321.37
+2025-07-17 20:04:18,144 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:18,144 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:04:18,145 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:18,145 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:04:18,145 - __main__ - INFO - Capital Final:      $10,321.37
+2025-07-17 20:04:18,146 - __main__ - INFO - Ganancia/Perdida:   $321.37 (3.21%)
+2025-07-17 20:04:18,146 - __main__ - INFO - Total de operaciones cerradas: 20
+2025-07-17 20:04:18,146 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:40,331 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:04:40,350 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:04:40,359 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:04:40,386 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:04:40,401 - exchange_functions - INFO - Senial en 2021-01-13 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,401 - exchange_functions - INFO - NUEVA OPERACION en 2021-01-13 03:00:00 a $33,818.50
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $1,623.55
+    - Costo Total (c/comision): $1,625.17
+    - SL: $31,801.12 | TP1: $34,340.02 | RR (TP1): 0.22
+2025-07-17 20:04:40,402 - exchange_functions - INFO - ALCANZADO TP1 en 2021-01-13 07:00:00 a $34,340.02. 
+    - P&L Parte 1: $10.88. SL movido a breakeven ($33886.20)
+2025-07-17 20:04:40,404 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-01-13 18:00:00 a $35,595.48.
+    - P&L Parte 2: $40.99
+    - P&L Total Op.: $51.87 (3.19% ROI)
+    - Capital final: $10,051.87
+2025-07-17 20:04:40,479 - exchange_functions - INFO - Senial en 2021-03-17 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,480 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-17 12:00:00 a $55,151.01
+    - Capital en Riesgo (1%): $100.52
+    - Tamanio Posicion (Bruto): $2,885.10
+    - Costo Total (c/comision): $2,887.99
+    - SL: $53,338.00 | TP1: $55,782.55 | RR (TP1): 0.27
+2025-07-17 20:04:40,481 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-17 18:00:00 a $55,782.55. 
+    - P&L Parte 1: $13.62. SL movido a breakeven ($55261.42)
+2025-07-17 20:04:40,482 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-03-17 19:00:00 a $57,198.57.
+    - P&L Parte 2: $50.62
+    - P&L Total Op.: $64.24 (2.22% ROI)
+    - Capital final: $10,116.11
+2025-07-17 20:04:40,493 - exchange_functions - INFO - Senial en 2021-03-25 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,494 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-25 02:00:00 a $52,255.37
+    - Capital en Riesgo (1%): $101.16
+    - Tamanio Posicion (Bruto): $3,034.27
+    - Costo Total (c/comision): $3,037.31
+    - SL: $50,616.08 | TP1: $54,950.84 | RR (TP1): 1.49
+2025-07-17 20:04:40,495 - exchange_functions - WARNING - CIERRE por SL en 2021-03-25 12:00:00 a $50,616.08. P&L: $-101.16. Capital final $10,014.94
+2025-07-17 20:04:40,523 - exchange_functions - INFO - Senial en 2021-04-17 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,524 - exchange_functions - INFO - NUEVA OPERACION en 2021-04-17 20:00:00 a $60,802.38
+    - Capital en Riesgo (1%): $100.15
+    - Tamanio Posicion (Bruto): $6,575.02
+    - Costo Total (c/comision): $6,581.60
+    - SL: $59,997.05 | TP1: $61,310.84 | RR (TP1): 0.42
+2025-07-17 20:04:40,524 - exchange_functions - WARNING - CIERRE por SL en 2021-04-17 23:00:00 a $59,997.05. P&L: $-100.15. Capital final $9,914.80
+2025-07-17 20:04:40,528 - exchange_functions - INFO - Senial en 2021-04-19 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,529 - exchange_functions - INFO - NUEVA OPERACION en 2021-04-19 18:00:00 a $55,635.03
+    - Capital en Riesgo (1%): $99.15
+    - Tamanio Posicion (Bruto): $4,187.56
+    - Costo Total (c/comision): $4,191.74
+    - SL: $54,427.83 | TP1: $56,385.65 | RR (TP1): 0.48
+2025-07-17 20:04:40,530 - exchange_functions - INFO - ALCANZADO TP1 en 2021-04-19 20:00:00 a $56,385.65. 
+    - P&L Parte 1: $24.03. SL movido a breakeven ($55746.41)
+2025-07-17 20:04:40,530 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-04-19 21:00:00 a $55,746.41. P&L Parte 2: $0.00. Capital final $9,938.83
+2025-07-17 20:04:40,561 - exchange_functions - INFO - Senial en 2021-05-14 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,562 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-14 23:00:00 a $49,841.45
+    - Capital en Riesgo (1%): $99.39
+    - Tamanio Posicion (Bruto): $5,202.40
+    - Costo Total (c/comision): $5,207.61
+    - SL: $48,988.09 | TP1: $50,198.06 | RR (TP1): 0.27
+2025-07-17 20:04:40,562 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-15 00:00:00 a $50,198.06. 
+    - P&L Parte 1: $13.39. SL movido a breakeven ($49941.23)
+2025-07-17 20:04:40,563 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-05-15 01:00:00 a $49,941.23. P&L Parte 2: $0.00. Capital final $9,952.22
+2025-07-17 20:04:40,569 - exchange_functions - INFO - Senial en 2021-05-18 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,570 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-18 18:00:00 a $42,800.01
+    - Capital en Riesgo (1%): $99.52
+    - Tamanio Posicion (Bruto): $2,874.61
+    - Costo Total (c/comision): $2,877.48
+    - SL: $41,402.43 | TP1: $44,383.73 | RR (TP1): 1.01
+2025-07-17 20:04:40,571 - exchange_functions - WARNING - CIERRE por SL en 2021-05-19 01:00:00 a $41,402.43. P&L: $-99.52. Capital final $9,852.70
+2025-07-17 20:04:40,586 - exchange_functions - INFO - Senial en 2021-05-31 08:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,587 - exchange_functions - WARNING - Senial en 2021-05-31 08:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $35444.27 <= Entrada $36120.49).
+2025-07-17 20:04:40,595 - exchange_functions - INFO - Senial en 2021-06-05 17:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,595 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-05 17:00:00 a $36,021.11
+    - Capital en Riesgo (1%): $98.53
+    - Tamanio Posicion (Bruto): $4,339.52
+    - Costo Total (c/comision): $4,343.86
+    - SL: $35,274.56 | TP1: $36,856.39 | RR (TP1): 0.93
+2025-07-17 20:04:40,596 - exchange_functions - WARNING - CIERRE por SL en 2021-06-05 21:00:00 a $35,274.56. P&L: $-98.53. Capital final $9,754.17
+2025-07-17 20:04:40,611 - exchange_functions - INFO - Senial en 2021-06-17 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,612 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-17 20:00:00 a $37,755.66
+    - Capital en Riesgo (1%): $97.54
+    - Tamanio Posicion (Bruto): $3,935.37
+    - Costo Total (c/comision): $3,939.31
+    - SL: $36,894.50 | TP1: $38,708.88 | RR (TP1): 0.94
+2025-07-17 20:04:40,613 - exchange_functions - WARNING - CIERRE por SL en 2021-06-18 14:00:00 a $36,894.50. P&L: $-97.54. Capital final $9,656.63
+2025-07-17 20:04:40,619 - exchange_functions - INFO - Senial en 2021-06-20 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,619 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-20 14:00:00 a $34,316.81
+    - Capital en Riesgo (1%): $96.57
+    - Tamanio Posicion (Bruto): $2,793.53
+    - Costo Total (c/comision): $2,796.32
+    - SL: $33,198.07 | TP1: $35,209.54 | RR (TP1): 0.69
+2025-07-17 20:04:40,620 - exchange_functions - INFO - ALCANZADO TP1 en 2021-06-20 19:00:00 a $35,209.54. 
+    - P&L Parte 1: $33.51. SL movido a breakeven ($34385.51)
+2025-07-17 20:04:40,621 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-06-21 04:00:00 a $34,385.51. P&L Parte 2: $0.00. Capital final $9,690.13
+2025-07-17 20:04:40,652 - exchange_functions - INFO - Senial en 2021-07-15 15:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,653 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-15 15:00:00 a $31,677.01
+    - Capital en Riesgo (1%): $96.90
+    - Tamanio Posicion (Bruto): $7,537.30
+    - Costo Total (c/comision): $7,544.84
+    - SL: $31,332.77 | TP1: $32,420.10 | RR (TP1): 1.67
+2025-07-17 20:04:40,654 - exchange_functions - WARNING - CIERRE por SL en 2021-07-15 17:00:00 a $31,332.77. P&L: $-96.90. Capital final $9,593.23
+2025-07-17 20:04:40,679 - exchange_functions - INFO - Senial en 2021-08-05 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,680 - exchange_functions - WARNING - Senial en 2021-08-05 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $39050.19 <= Entrada $39002.78).
+2025-07-17 20:04:40,698 - exchange_functions - INFO - Senial en 2021-08-19 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,699 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-19 06:00:00 a $44,380.61
+    - Capital en Riesgo (1%): $95.93
+    - Tamanio Posicion (Bruto): $5,842.78
+    - Costo Total (c/comision): $5,848.62
+    - SL: $43,740.05 | TP1: $44,921.57 | RR (TP1): 0.62
+2025-07-17 20:04:40,699 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-19 08:00:00 a $44,921.57. 
+    - P&L Parte 1: $29.73. SL movido a breakeven ($44469.46)
+2025-07-17 20:04:40,700 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-08-19 10:00:00 a $44,469.46. P&L Parte 2: $0.00. Capital final $9,622.96
+2025-07-17 20:04:40,710 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,710 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $96.23
+    - Tamanio Posicion (Bruto): $3,387.79
+    - Costo Total (c/comision): $3,391.18
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 20:04:40,713 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $34.33. SL movido a breakeven ($47037.74)
+2025-07-17 20:04:40,713 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $27.14
+    - P&L Total Op.: $61.46 (1.81% ROI)
+    - Capital final: $9,684.43
+2025-07-17 20:04:40,732 - exchange_functions - INFO - Senial en 2021-09-10 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,733 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-10 11:00:00 a $46,331.86
+    - Capital en Riesgo (1%): $96.84
+    - Tamanio Posicion (Bruto): $4,861.52
+    - Costo Total (c/comision): $4,866.38
+    - SL: $45,500.73 | TP1: $46,514.80 | RR (TP1): 0.10
+2025-07-17 20:04:40,734 - exchange_functions - WARNING - CIERRE por SL en 2021-09-10 14:00:00 a $45,500.73. P&L: $-96.84. Capital final $9,587.58
+2025-07-17 20:04:40,754 - exchange_functions - INFO - Senial en 2021-09-22 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,755 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-22 01:00:00 a $42,199.99
+    - Capital en Riesgo (1%): $95.88
+    - Tamanio Posicion (Bruto): $1,634.19
+    - Costo Total (c/comision): $1,635.82
+    - SL: $39,806.18 | TP1: $42,312.18 | RR (TP1): 0.01
+2025-07-17 20:04:40,755 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-22 03:00:00 a $42,312.18. 
+    - P&L Parte 1: $0.54. SL movido a breakeven ($42284.47)
+2025-07-17 20:04:40,756 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-22 04:00:00 a $42,284.47. P&L Parte 2: $0.00. Capital final $9,588.12
+2025-07-17 20:04:40,806 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,806 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $95.88
+    - Tamanio Posicion (Bruto): $5,638.63
+    - Costo Total (c/comision): $5,644.27
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:04:40,807 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $20.07. SL movido a breakeven ($60234.97)
+2025-07-17 20:04:40,807 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $54.71
+    - P&L Total Op.: $74.79 (1.32% ROI)
+    - Capital final: $9,662.90
+2025-07-17 20:04:40,830 - exchange_functions - INFO - Senial en 2021-11-12 13:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,831 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-12 13:00:00 a $63,982.09
+    - Capital en Riesgo (1%): $96.63
+    - Tamanio Posicion (Bruto): $4,071.53
+    - Costo Total (c/comision): $4,075.60
+    - SL: $62,590.18 | TP1: $64,596.02 | RR (TP1): 0.32
+2025-07-17 20:04:40,831 - exchange_functions - WARNING - CIERRE por SL en 2021-11-12 16:00:00 a $62,590.18. P&L: $-96.63. Capital final $9,566.28
+2025-07-17 20:04:40,839 - exchange_functions - INFO - Senial en 2021-11-18 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,840 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-18 12:00:00 a $59,124.66
+    - Capital en Riesgo (1%): $95.66
+    - Tamanio Posicion (Bruto): $6,159.61
+    - Costo Total (c/comision): $6,165.77
+    - SL: $58,323.86 | TP1: $59,969.18 | RR (TP1): 0.79
+2025-07-17 20:04:40,840 - exchange_functions - WARNING - CIERRE por SL en 2021-11-18 15:00:00 a $58,323.86. P&L: $-95.66. Capital final $9,470.61
+2025-07-17 20:04:40,849 - exchange_functions - INFO - Senial en 2021-11-24 16:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,850 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-24 16:00:00 a $56,608.82
+    - Capital en Riesgo (1%): $94.71
+    - Tamanio Posicion (Bruto): $7,112.34
+    - Costo Total (c/comision): $7,119.45
+    - SL: $55,967.61 | TP1: $56,736.85 | RR (TP1): 0.02
+2025-07-17 20:04:40,851 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-24 17:00:00 a $56,736.85. 
+    - P&L Parte 1: $0.92. SL movido a breakeven ($56722.15)
+2025-07-17 20:04:40,852 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-11-24 18:00:00 a $56,722.15. P&L Parte 2: $0.00. Capital final $9,471.53
+2025-07-17 20:04:40,878 - exchange_functions - INFO - Senial en 2021-12-15 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,878 - exchange_functions - WARNING - Senial en 2021-12-15 18:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47902.88 <= Entrada $47829.99).
+2025-07-17 20:04:40,899 - exchange_functions - INFO - Senial en 2021-12-31 22:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:40,899 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-31 22:00:00 a $46,303.99
+    - Capital en Riesgo (1%): $94.72
+    - Tamanio Posicion (Bruto): $6,500.73
+    - Costo Total (c/comision): $6,507.23
+    - SL: $45,721.37 | TP1: $47,322.48 | RR (TP1): 1.37
+2025-07-17 20:04:40,900 - exchange_functions - WARNING - CIERRE FORZADO al final del backtest. Capital final: $9,446.32
+2025-07-17 20:04:40,900 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:40,901 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:04:40,901 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:40,901 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:04:40,901 - __main__ - INFO - Capital Final:      $9,446.32
+2025-07-17 20:04:40,901 - __main__ - INFO - Ganancia/Perdida:   $-553.68 (-5.54%)
+2025-07-17 20:04:40,902 - __main__ - INFO - Total de operaciones cerradas: 19
+2025-07-17 20:04:40,902 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:57,633 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:04:57,651 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:04:57,660 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:04:57,692 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:04:57,783 - exchange_functions - INFO - Senial en 2021-03-17 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,783 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $55862.42 <= Entrada $56306.84).
+2025-07-17 20:04:57,793 - exchange_functions - INFO - Senial en 2021-03-24 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,794 - exchange_functions - INFO - NUEVA OPERACION en 2021-03-24 03:00:00 a $54,350.54
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $4,935.46
+    - Costo Total (c/comision): $4,940.40
+    - SL: $53,357.02 | TP1: $54,747.85 | RR (TP1): 0.26
+2025-07-17 20:04:57,794 - exchange_functions - INFO - ALCANZADO TP1 en 2021-03-24 06:00:00 a $54,747.85. 
+    - P&L Parte 1: $13.09. SL movido a breakeven ($54459.35)
+2025-07-17 20:04:57,795 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-03-24 08:00:00 a $55,805.60.
+    - P&L Parte 2: $61.06
+    - P&L Total Op.: $74.15 (1.50% ROI)
+    - Capital final: $10,074.15
+2025-07-17 20:04:57,828 - exchange_functions - INFO - Senial en 2021-04-17 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,828 - exchange_functions - INFO - NUEVA OPERACION en 2021-04-17 20:00:00 a $60,802.38
+    - Capital en Riesgo (1%): $100.74
+    - Tamanio Posicion (Bruto): $6,613.89
+    - Costo Total (c/comision): $6,620.51
+    - SL: $59,997.05 | TP1: $61,310.84 | RR (TP1): 0.42
+2025-07-17 20:04:57,829 - exchange_functions - WARNING - CIERRE por SL en 2021-04-17 23:00:00 a $59,997.05. P&L: $-100.74. Capital final $9,973.41
+2025-07-17 20:04:57,863 - exchange_functions - INFO - Senial en 2021-05-14 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,863 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-14 23:00:00 a $49,841.45
+    - Capital en Riesgo (1%): $99.73
+    - Tamanio Posicion (Bruto): $5,220.50
+    - Costo Total (c/comision): $5,225.72
+    - SL: $48,988.09 | TP1: $50,198.06 | RR (TP1): 0.27
+2025-07-17 20:04:57,864 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-15 00:00:00 a $50,198.06. 
+    - P&L Parte 1: $13.44. SL movido a breakeven ($49941.23)
+2025-07-17 20:04:57,864 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-05-15 01:00:00 a $49,941.23. P&L Parte 2: $0.00. Capital final $9,986.85
+2025-07-17 20:04:57,869 - exchange_functions - INFO - Senial en 2021-05-17 19:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,870 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-17 19:00:00 a $44,197.73
+    - Capital en Riesgo (1%): $99.87
+    - Tamanio Posicion (Bruto): $2,162.02
+    - Costo Total (c/comision): $2,164.18
+    - SL: $42,242.58 | TP1: $44,329.29 | RR (TP1): 0.02
+2025-07-17 20:04:57,871 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-17 20:00:00 a $44,329.29. 
+    - P&L Parte 1: $1.05. SL movido a breakeven ($44286.21)
+2025-07-17 20:04:57,871 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-05-17 21:00:00 a $44,286.21. P&L Parte 2: $0.00. Capital final $9,987.90
+2025-07-17 20:04:57,888 - exchange_functions - INFO - Senial en 2021-05-29 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,888 - exchange_functions - INFO - NUEVA OPERACION en 2021-05-29 20:00:00 a $34,234.18
+    - Capital en Riesgo (1%): $99.88
+    - Tamanio Posicion (Bruto): $2,435.22
+    - Costo Total (c/comision): $2,437.66
+    - SL: $32,897.22 | TP1: $35,296.09 | RR (TP1): 0.71
+2025-07-17 20:04:57,889 - exchange_functions - INFO - ALCANZADO TP1 en 2021-05-30 05:00:00 a $35,296.09. 
+    - P&L Parte 1: $35.30. SL movido a breakeven ($34302.72)
+2025-07-17 20:04:57,889 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-05-30 06:00:00 a $35,486.09.
+    - P&L Parte 2: $42.05
+    - P&L Total Op.: $77.34 (3.17% ROI)
+    - Capital final: $10,065.24
+2025-07-17 20:04:57,898 - exchange_functions - INFO - Senial en 2021-06-05 17:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,899 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-05 17:00:00 a $36,021.11
+    - Capital en Riesgo (1%): $100.65
+    - Tamanio Posicion (Bruto): $4,433.13
+    - Costo Total (c/comision): $4,437.57
+    - SL: $35,274.56 | TP1: $36,856.39 | RR (TP1): 0.93
+2025-07-17 20:04:57,900 - exchange_functions - WARNING - CIERRE por SL en 2021-06-05 21:00:00 a $35,274.56. P&L: $-100.65. Capital final $9,964.59
+2025-07-17 20:04:57,910 - exchange_functions - INFO - Senial en 2021-06-13 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,911 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-13 06:00:00 a $35,378.25
+    - Capital en Riesgo (1%): $99.65
+    - Tamanio Posicion (Bruto): $3,428.56
+    - Costo Total (c/comision): $3,431.99
+    - SL: $34,419.83 | TP1: $35,598.29 | RR (TP1): 0.14
+2025-07-17 20:04:57,912 - exchange_functions - INFO - ALCANZADO TP1 en 2021-06-13 08:00:00 a $35,598.29. 
+    - P&L Parte 1: $7.22. SL movido a breakeven ($35449.08)
+2025-07-17 20:04:57,913 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-06-13 16:00:00 a $36,179.60.
+    - P&L Parte 2: $35.36
+    - P&L Total Op.: $42.59 (1.24% ROI)
+    - Capital final: $10,007.17
+2025-07-17 20:04:57,920 - exchange_functions - INFO - Senial en 2021-06-17 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,920 - exchange_functions - INFO - NUEVA OPERACION en 2021-06-17 20:00:00 a $37,755.66
+    - Capital en Riesgo (1%): $100.07
+    - Tamanio Posicion (Bruto): $4,037.45
+    - Costo Total (c/comision): $4,041.49
+    - SL: $36,894.50 | TP1: $38,708.88 | RR (TP1): 0.94
+2025-07-17 20:04:57,922 - exchange_functions - WARNING - CIERRE por SL en 2021-06-18 14:00:00 a $36,894.50. P&L: $-100.07. Capital final $9,907.10
+2025-07-17 20:04:57,928 - exchange_functions - INFO - Senial en 2021-06-22 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,928 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32445.69 <= Entrada $32622.65).
+2025-07-17 20:04:57,951 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,951 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:04:57,959 - exchange_functions - INFO - Senial en 2021-07-14 06:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,959 - exchange_functions - INFO - NUEVA OPERACION en 2021-07-14 06:00:00 a $31,835.47
+    - Capital en Riesgo (1%): $99.07
+    - Tamanio Posicion (Bruto): $6,734.13
+    - Costo Total (c/comision): $6,740.87
+    - SL: $31,430.38 | TP1: $32,443.05 | RR (TP1): 1.16
+2025-07-17 20:04:57,961 - exchange_functions - INFO - ALCANZADO TP1 en 2021-07-14 09:00:00 a $32,443.05. 
+    - P&L Parte 1: $57.46. SL movido a breakeven ($31899.20)
+2025-07-17 20:04:57,961 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-07-14 18:00:00 a $33,074.68.
+    - P&L Parte 2: $124.20
+    - P&L Total Op.: $181.66 (2.69% ROI)
+    - Capital final: $10,088.76
+2025-07-17 20:04:57,987 - exchange_functions - INFO - Senial en 2021-08-02 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,987 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-02 23:00:00 a $39,147.82
+    - Capital en Riesgo (1%): $100.89
+    - Tamanio Posicion (Bruto): $6,331.32
+    - Costo Total (c/comision): $6,337.65
+    - SL: $38,601.76 | TP1: $39,564.10 | RR (TP1): 0.54
+2025-07-17 20:04:57,988 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-03 00:00:00 a $39,564.10. 
+    - P&L Parte 1: $27.30. SL movido a breakeven ($39226.19)
+2025-07-17 20:04:57,988 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-08-03 01:00:00 a $39,226.19. P&L Parte 2: $0.00. Capital final $10,116.06
+2025-07-17 20:04:57,991 - exchange_functions - INFO - Senial en 2021-08-04 11:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:57,992 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $38092.25 <= Entrada $38160.06).
+2025-07-17 20:04:58,010 - exchange_functions - INFO - Senial en 2021-08-18 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,010 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-18 23:00:00 a $44,705.29
+    - Capital en Riesgo (1%): $101.16
+    - Tamanio Posicion (Bruto): $7,517.98
+    - Costo Total (c/comision): $7,525.50
+    - SL: $44,192.64 | TP1: $45,177.33 | RR (TP1): 0.64
+2025-07-17 20:04:58,011 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-19 01:00:00 a $45,177.33. 
+    - P&L Parte 1: $32.13. SL movido a breakeven ($44794.79)
+2025-07-17 20:04:58,011 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-08-19 02:00:00 a $44,794.79. P&L Parte 2: $0.00. Capital final $10,148.20
+2025-07-17 20:04:58,022 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,022 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $101.48
+    - Tamanio Posicion (Bruto): $3,572.70
+    - Costo Total (c/comision): $3,576.28
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 20:04:58,024 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $36.20. SL movido a breakeven ($47037.74)
+2025-07-17 20:04:58,024 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.62
+    - P&L Total Op.: $64.82 (1.81% ROI)
+    - Capital final: $10,213.01
+2025-07-17 20:04:58,031 - exchange_functions - INFO - Senial en 2021-09-01 03:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,031 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-01 03:00:00 a $47,043.65
+    - Capital en Riesgo (1%): $102.13
+    - Tamanio Posicion (Bruto): $5,506.86
+    - Costo Total (c/comision): $5,512.37
+    - SL: $46,264.49 | TP1: $47,277.72 | RR (TP1): 0.16
+2025-07-17 20:04:58,032 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-01 05:00:00 a $47,277.72. 
+    - P&L Parte 1: $8.18. SL movido a breakeven ($47137.83)
+2025-07-17 20:04:58,033 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-01 07:00:00 a $47,137.83. P&L Parte 2: $0.00. Capital final $10,221.19
+2025-07-17 20:04:58,044 - exchange_functions - INFO - Senial en 2021-09-09 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,045 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $46213.48 <= Entrada $46304.44).
+2025-07-17 20:04:58,061 - exchange_functions - INFO - Senial en 2021-09-22 01:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,062 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-22 01:00:00 a $42,199.99
+    - Capital en Riesgo (1%): $102.21
+    - Tamanio Posicion (Bruto): $1,742.19
+    - Costo Total (c/comision): $1,743.93
+    - SL: $39,806.18 | TP1: $42,312.18 | RR (TP1): 0.01
+2025-07-17 20:04:58,062 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-22 03:00:00 a $42,312.18. 
+    - P&L Parte 1: $0.57. SL movido a breakeven ($42284.47)
+2025-07-17 20:04:58,063 - exchange_functions - WARNING - CIERRE por SL en Breakeven en 2021-09-22 04:00:00 a $42,284.47. P&L Parte 2: $-0.00. Capital final $10,221.77
+2025-07-17 20:04:58,073 - exchange_functions - INFO - Senial en 2021-09-29 23:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,074 - exchange_functions - INFO - NUEVA OPERACION en 2021-09-29 23:00:00 a $41,524.28
+    - Capital en Riesgo (1%): $102.22
+    - Tamanio Posicion (Bruto): $5,844.64
+    - Costo Total (c/comision): $5,850.48
+    - SL: $40,880.46 | TP1: $41,828.84 | RR (TP1): 0.30
+2025-07-17 20:04:58,074 - exchange_functions - INFO - ALCANZADO TP1 en 2021-09-30 00:00:00 a $41,828.84. 
+    - P&L Parte 1: $15.57. SL movido a breakeven ($41607.41)
+2025-07-17 20:04:58,075 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-09-30 01:00:00 a $42,847.62.
+    - P&L Parte 2: $87.19
+    - P&L Total Op.: $102.76 (1.76% ROI)
+    - Capital final: $10,324.53
+2025-07-17 20:04:58,106 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,107 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $103.25
+    - Tamanio Posicion (Bruto): $6,071.70
+    - Costo Total (c/comision): $6,077.78
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:04:58,107 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.61. SL movido a breakeven ($60234.97)
+2025-07-17 20:04:58,108 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $58.92
+    - P&L Total Op.: $80.53 (1.32% ROI)
+    - Capital final: $10,405.06
+2025-07-17 20:04:58,132 - exchange_functions - INFO - Senial en 2021-11-12 13:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,133 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-12 13:00:00 a $63,982.09
+    - Capital en Riesgo (1%): $104.05
+    - Tamanio Posicion (Bruto): $4,384.24
+    - Costo Total (c/comision): $4,388.62
+    - SL: $62,590.18 | TP1: $64,596.02 | RR (TP1): 0.32
+2025-07-17 20:04:58,134 - exchange_functions - WARNING - CIERRE por SL en 2021-11-12 16:00:00 a $62,590.18. P&L: $-104.05. Capital final $10,301.01
+2025-07-17 20:04:58,142 - exchange_functions - INFO - Senial en 2021-11-18 07:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,143 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-18 07:00:00 a $59,734.20
+    - Capital en Riesgo (1%): $103.01
+    - Tamanio Posicion (Bruto): $6,226.55
+    - Costo Total (c/comision): $6,232.78
+    - SL: $58,864.58 | TP1: $60,127.35 | RR (TP1): 0.28
+2025-07-17 20:04:58,144 - exchange_functions - WARNING - CIERRE por SL en 2021-11-18 13:00:00 a $58,864.58. P&L: $-103.01. Capital final $10,198.00
+2025-07-17 20:04:58,151 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,151 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $101.98
+    - Tamanio Posicion (Bruto): $5,695.08
+    - Costo Total (c/comision): $5,700.78
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 20:04:58,152 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.53. SL movido a breakeven ($56448.31)
+2025-07-17 20:04:58,153 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $33.04
+    - P&L Total Op.: $43.58 (0.76% ROI)
+    - Capital final: $10,241.57
+2025-07-17 20:04:58,166 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,166 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 20:04:58,178 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,178 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 20:04:58,184 - exchange_functions - INFO - Senial en 2021-12-14 20:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,184 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $47046.82 <= Entrada $47785.20).
+2025-07-17 20:04:58,205 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:04:58,205 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $102.42
+    - Tamanio Posicion (Bruto): $4,618.07
+    - Costo Total (c/comision): $4,622.69
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 20:04:58,206 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $29.14. SL movido a breakeven ($46755.37)
+2025-07-17 20:04:58,207 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.67
+    - P&L Total Op.: $79.80 (1.73% ROI)
+    - Capital final: $10,321.37
+2025-07-17 20:04:58,209 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:58,209 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:04:58,209 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:04:58,210 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:04:58,210 - __main__ - INFO - Capital Final:      $10,321.37
+2025-07-17 20:04:58,210 - __main__ - INFO - Ganancia/Perdida:   $321.37 (3.21%)
+2025-07-17 20:04:58,210 - __main__ - INFO - Total de operaciones cerradas: 20
+2025-07-17 20:04:58,211 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:06:15,444 - __main__ - INFO - Leyendo el archivo de datos...
+2025-07-17 20:06:15,463 - __main__ - INFO - Calculando indicadores...
+2025-07-17 20:06:15,475 - __main__ - INFO - Buscando seniales de divergencia...
+2025-07-17 20:06:15,517 - exchange_functions - INFO - Iniciando simulacion con Capital: $10,000.00
+2025-07-17 20:06:15,605 - exchange_functions - WARNING - Senial en 2021-03-17 06:00:00 RECHAZADA por filtro de volumen (Umbral: 3862.95).
+2025-07-17 20:06:15,615 - exchange_functions - WARNING - Senial en 2021-03-24 03:00:00 RECHAZADA por filtro de volumen (Umbral: 3354.43).
+2025-07-17 20:06:15,647 - exchange_functions - WARNING - Senial en 2021-04-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 4737.27).
+2025-07-17 20:06:15,682 - exchange_functions - WARNING - Senial en 2021-05-14 23:00:00 RECHAZADA por filtro de volumen (Umbral: 4644.02).
+2025-07-17 20:06:15,687 - exchange_functions - WARNING - Senial en 2021-05-17 19:00:00 RECHAZADA por filtro de volumen (Umbral: 10908.59).
+2025-07-17 20:06:15,703 - exchange_functions - WARNING - Senial en 2021-05-29 20:00:00 RECHAZADA por filtro de volumen (Umbral: 9179.30).
+2025-07-17 20:06:15,712 - exchange_functions - WARNING - Senial en 2021-06-05 17:00:00 RECHAZADA por filtro de volumen (Umbral: 5049.50).
+2025-07-17 20:06:15,723 - exchange_functions - WARNING - Senial en 2021-06-13 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2628.16).
+2025-07-17 20:06:15,730 - exchange_functions - WARNING - Senial en 2021-06-17 20:00:00 RECHAZADA por filtro de volumen (Umbral: 5569.39).
+2025-07-17 20:06:15,738 - exchange_functions - WARNING - Senial en 2021-06-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 8853.06).
+2025-07-17 20:06:15,763 - exchange_functions - INFO - Senial en 2021-07-09 14:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:15,764 - exchange_functions - WARNING - Senial en 2021-07-09 14:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $32902.64 <= Entrada $33534.75).
+2025-07-17 20:06:15,772 - exchange_functions - WARNING - Senial en 2021-07-14 06:00:00 RECHAZADA por filtro de volumen (Umbral: 2663.48).
+2025-07-17 20:06:15,797 - exchange_functions - WARNING - Senial en 2021-08-02 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3300.14).
+2025-07-17 20:06:15,801 - exchange_functions - WARNING - Senial en 2021-08-04 11:00:00 RECHAZADA por filtro de volumen (Umbral: 2486.37).
+2025-07-17 20:06:15,821 - exchange_functions - WARNING - Senial en 2021-08-18 23:00:00 RECHAZADA por filtro de volumen (Umbral: 3496.32).
+2025-07-17 20:06:15,832 - exchange_functions - INFO - Senial en 2021-08-26 12:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:15,832 - exchange_functions - INFO - NUEVA OPERACION en 2021-08-26 12:00:00 a $46,943.76
+    - Capital en Riesgo (1%): $100.00
+    - Tamanio Posicion (Bruto): $3,520.53
+    - Costo Total (c/comision): $3,524.05
+    - SL: $45,702.98 | TP1: $47,990.03 | RR (TP1): 0.71
+2025-07-17 20:06:15,834 - exchange_functions - INFO - ALCANZADO TP1 en 2021-08-27 14:00:00 a $47,990.03. 
+    - P&L Parte 1: $35.67. SL movido a breakeven ($47037.74)
+2025-07-17 20:06:15,835 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-08-27 15:00:00 a $47,790.54.
+    - P&L Parte 2: $28.20
+    - P&L Total Op.: $63.87 (1.81% ROI)
+    - Capital final: $10,063.87
+2025-07-17 20:06:15,841 - exchange_functions - WARNING - Senial en 2021-09-01 03:00:00 RECHAZADA por filtro de volumen (Umbral: 2511.25).
+2025-07-17 20:06:15,853 - exchange_functions - WARNING - Senial en 2021-09-09 05:00:00 RECHAZADA por filtro de volumen (Umbral: 2709.45).
+2025-07-17 20:06:15,870 - exchange_functions - WARNING - Senial en 2021-09-22 01:00:00 RECHAZADA por filtro de volumen (Umbral: 5590.78).
+2025-07-17 20:06:15,881 - exchange_functions - WARNING - Senial en 2021-09-29 23:00:00 RECHAZADA por filtro de volumen (Umbral: 2572.63).
+2025-07-17 20:06:15,913 - exchange_functions - INFO - Senial en 2021-10-24 18:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:15,913 - exchange_functions - INFO - NUEVA OPERACION en 2021-10-24 18:00:00 a $60,114.62
+    - Capital en Riesgo (1%): $100.64
+    - Tamanio Posicion (Bruto): $5,918.42
+    - Costo Total (c/comision): $5,924.34
+    - SL: $59,211.74 | TP1: $60,663.39 | RR (TP1): 0.42
+2025-07-17 20:06:15,914 - exchange_functions - INFO - ALCANZADO TP1 en 2021-10-24 19:00:00 a $60,663.39. 
+    - P&L Parte 1: $21.07. SL movido a breakeven ($60234.97)
+2025-07-17 20:06:15,914 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-10-25 00:00:00 a $61,402.75.
+    - P&L Parte 2: $57.43
+    - P&L Total Op.: $78.50 (1.32% ROI)
+    - Capital final: $10,142.37
+2025-07-17 20:06:15,938 - exchange_functions - WARNING - Senial en 2021-11-12 13:00:00 RECHAZADA por filtro de volumen (Umbral: 2454.64).
+2025-07-17 20:06:15,949 - exchange_functions - WARNING - Senial en 2021-11-18 07:00:00 RECHAZADA por filtro de volumen (Umbral: 2016.30).
+2025-07-17 20:06:15,956 - exchange_functions - INFO - Senial en 2021-11-23 10:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:15,957 - exchange_functions - INFO - NUEVA OPERACION en 2021-11-23 10:00:00 a $56,335.53
+    - Capital en Riesgo (1%): $101.42
+    - Tamanio Posicion (Bruto): $5,664.02
+    - Costo Total (c/comision): $5,669.68
+    - SL: $55,438.52 | TP1: $56,656.93 | RR (TP1): 0.21
+2025-07-17 20:06:15,958 - exchange_functions - INFO - ALCANZADO TP1 en 2021-11-23 13:00:00 a $56,656.93. 
+    - P&L Parte 1: $10.48. SL movido a breakeven ($56448.31)
+2025-07-17 20:06:15,959 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-11-23 14:00:00 a $57,102.66.
+    - P&L Parte 2: $32.86
+    - P&L Total Op.: $43.34 (0.76% ROI)
+    - Capital final: $10,185.71
+2025-07-17 20:06:15,972 - exchange_functions - INFO - Senial en 2021-12-03 05:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:15,973 - exchange_functions - WARNING - Senial en 2021-12-03 05:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $56590.51 <= Entrada $56725.86).
+2025-07-17 20:06:15,984 - exchange_functions - INFO - Senial en 2021-12-11 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:15,985 - exchange_functions - WARNING - Senial en 2021-12-11 02:00:00 RECHAZADA: Recompensa nula o negativa (TP1 $48106.43 <= Entrada $48249.00).
+2025-07-17 20:06:15,991 - exchange_functions - WARNING - Senial en 2021-12-14 20:00:00 RECHAZADA por filtro de volumen (Umbral: 3137.96).
+2025-07-17 20:06:16,011 - exchange_functions - INFO - Senial en 2021-12-30 02:00:00 SUPERO filtro de volumen. Evaluando R/R...
+2025-07-17 20:06:16,012 - exchange_functions - INFO - NUEVA OPERACION en 2021-12-30 02:00:00 a $46,661.95
+    - Capital en Riesgo (1%): $101.86
+    - Tamanio Posicion (Bruto): $4,592.88
+    - Costo Total (c/comision): $4,597.47
+    - SL: $45,719.50 | TP1: $47,344.74 | RR (TP1): 0.57
+2025-07-17 20:06:16,013 - exchange_functions - INFO - ALCANZADO TP1 en 2021-12-30 11:00:00 a $47,344.74. 
+    - P&L Parte 1: $28.98. SL movido a breakeven ($46755.37)
+2025-07-17 20:06:16,014 - exchange_functions - INFO - ALCANZADO TP2 y CIERRE en 2021-12-30 18:00:00 a $47,780.28.
+    - P&L Parte 2: $50.39
+    - P&L Total Op.: $79.37 (1.73% ROI)
+    - Capital final: $10,265.07
+2025-07-17 20:06:16,016 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:06:16,017 - __main__ - INFO -           RESULTADOS DEL BACKTEST          
+2025-07-17 20:06:16,017 - __main__ - INFO - -------------------------------------------
+2025-07-17 20:06:16,017 - __main__ - INFO - Capital Inicial:    $10,000.00
+2025-07-17 20:06:16,018 - __main__ - INFO - Capital Final:      $10,265.07
+2025-07-17 20:06:16,018 - __main__ - INFO - Ganancia/Perdida:   $265.07 (2.65%)
+2025-07-17 20:06:16,018 - __main__ - INFO - Total de operaciones cerradas: 4
+2025-07-17 20:06:16,018 - __main__ - INFO - -------------------------------------------

@@ -25,14 +25,14 @@ def get_candles_data( exchange:ccxt.Exchange, symbol:str, timeframe:str, start_y
                 logger.info("No se recibieron mas datos de la API. Finalizando bucle.")
                 break
             all_ohlcv.extend(ohlcv_array)
-            # Actualizamos el 'since' para la siguiente iteración.
+            # Actualizamos el 'since' para la siguiente iteracion.
             # Será el timestamp de la última vela obtenida + 1 milisegundo.
             # Esto evita obtener la misma vela dos veces.
             since = ohlcv_array[-1][0] + 1
 
         logger.info(f"Descarga completada. Total de velas obtenidas: {len(all_ohlcv)}")
-        # Filtramos para asegurarnos de que no tenemos datos del año siguiente
-        # a veces la última petición puede traer velas del siguiente año.
+        # Filtramos para asegurarnos de que no tenemos datos del anio siguiente
+        # a veces la última peticion puede traer velas del siguiente anio.
         filtered_ohlcv = [candle for candle in all_ohlcv if candle[0] < end_timestamp]
         logger.info(f"Velas despues de filtrar por anio {start_year}: {len(filtered_ohlcv)}")
         
@@ -82,11 +82,11 @@ def calculate_indicators(df: pd.DataFrame, rsi_period=14, bb_period=20, bb_std_d
 
 def find_divergence_signals(df: pd.DataFrame, pivot_lookback_window, confirmation_wait_candles, min_distance_between_pivots):
     """
-    Función optimizada para PRE-CALCULAR todas las potenciales señales de divergencia.
+    Funcion optimizada para PRE-CALCULAR todas las potenciales seniales de divergencia.
     Ahora devuelve el DataFrame modificado.
     """
-    # Esta es una versión simplificada de tu función anterior. Su único objetivo
-    # es marcar las velas donde una señal de divergencia es VÁLIDA para ser evaluada.
+    # Esta es una version simplificada de tu funcion anterior. Su único objetivo
+    # es marcar las velas donde una senial de divergencia es VÁLIDA para ser evaluada.
     is_rsi_lookback_min = df['RSI'] == df['RSI'].rolling(window=pivot_lookback_window).min()
     conditions_list = [df['RSI'] < df['RSI'].shift(-i) for i in range(1, confirmation_wait_candles + 1)]
     is_rsi_forward_confirmed = reduce(lambda a, b: a & b, conditions_list)
@@ -117,8 +117,8 @@ def find_divergence_signals(df: pd.DataFrame, pivot_lookback_window, confirmatio
             signal_pos = pivot_pos + confirmation_wait_candles
             if signal_pos < len(df.index):
                 signal_idx = df.index[signal_pos]
-                # En lugar de comprobar el volumen aquí, solo marcamos la señal potencial.
-                # La gestión de riesgo se hará en el bucle de simulación.
+                # En lugar de comprobar el volumen aquí, solo marcamos la senial potencial.
+                # La gestion de riesgo se hará en el bucle de simulacion.
                 df.loc[signal_idx, 'bullish_divergence_signal'] = True
         
         last_pivot_idx = current_pivot_idx
@@ -126,7 +126,7 @@ def find_divergence_signals(df: pd.DataFrame, pivot_lookback_window, confirmatio
     df.drop('rsi_pivot_low', axis=1, inplace=True)
     return df
 
-# --- 2. BUCLE PRINCIPAL DE SIMULACIÓN ---
+# --- 2. BUCLE PRINCIPAL DE SIMULACIoN ---
 
 def run_simulation(
         df: pd.DataFrame,
@@ -151,16 +151,30 @@ def run_simulation(
     for i in range(len(df)):
         current_row = df.iloc[i]
         current_price = current_row['Close']
-        current_date = df.index[i].date()
+        current_date = df.index[i]
 
-        # --- A. GESTIÓN DE LA OPERACIÓN ACTIVA ---
+        # --- A. GESTIoN DE LA OPERACIoN ACTIVA ---
         if in_trade:
-            # Comprobar Stop Loss
-            if current_row['Low'] <= active_trade['sl_price']:
+            # Comprobar Stop Loss (antes de TP1)
+            if not active_trade.get('is_phase_2') and current_row['Low'] <= active_trade['sl_price']:
                 exit_price = active_trade['sl_price']
+                pnl = (active_trade['position_size'] * exit_price * (1 - fee_rate)) - active_trade['total_cost']
                 capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
                 trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'SL'})
-                logger.warning(f"CIERRE por SL en {current_date}: Capital final ${capital:,.2f}")
+                logger.warning(f"CIERRE por SL en {current_date} a ${exit_price:,.2f}. P&L: ${pnl:,.2f}. Capital final ${capital:,.2f}")
+                in_trade = False
+                active_trade = {}
+                continue
+
+            # Comprobar Stop Loss (después de TP1 - Breakeven)
+            if active_trade.get('is_phase_2') and current_row['Low'] <= active_trade['sl_price']:
+                exit_price = active_trade['sl_price']
+                # ### MODIFICADO ### Cálculo de P&L de la segunda mitad
+                cash_in_part2 = active_trade['position_size'] * exit_price * (1 - fee_rate)
+                pnl_part2 = cash_in_part2 - active_trade['cost_part2']
+                capital += cash_in_part2
+                trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'SL@BE'})
+                logger.warning(f"CIERRE por SL en Breakeven en {current_date} a ${exit_price:,.2f}. P&L Parte 2: ${pnl_part2:,.2f}. Capital final ${capital:,.2f}")
                 in_trade = False
                 active_trade = {}
                 continue
@@ -168,28 +182,48 @@ def run_simulation(
             # Comprobar Fase 2: Take Profit 2
             if active_trade.get('is_phase_2') and current_row['High'] >= active_trade['tp2_price']:
                 exit_price = active_trade['tp2_price']
-                capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
+                # Cálculo de P&L de la segunda mitad
+                cash_in_part2 = active_trade['position_size'] * exit_price * (1 - fee_rate)
+                pnl_part2 = cash_in_part2 - active_trade['cost_part2']
+                capital += cash_in_part2
+                # Calcular P&L y ROI total
+                pnl_total = (active_trade['pnl_part1'] + pnl_part2) # Necesitamos guardar pnl_part1
+                costo_total = active_trade['total_cost']
+                roi_pct = (pnl_total / costo_total) * 100
                 trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'TP2'})
-                logger.info(f"CIERRE por TP2 en {current_date}: Capital final ${capital:,.2f}")
+                # Logger
+                logger.info(f"ALCANZADO TP2 y CIERRE en {current_date} a ${exit_price:,.2f}.\n"
+                    f"    - P&L Parte 2: ${pnl_part2:,.2f}\n"
+                    f"    - P&L Total Op.: ${pnl_total:,.2f} ({roi_pct:.2f}% ROI)\n"
+                    f"    - Capital final: ${capital:,.2f}")
                 in_trade = False
                 active_trade = {}
-                continue
+                continue # Importante para no seguir procesando en esta vela
 
             # Comprobar Fase 1: Take Profit 1
             if not active_trade.get('is_phase_2') and current_row['High'] >= active_trade['tp1_price']:
-                # Vender 50% de la posición
                 exit_price_tp1 = active_trade['tp1_price']
                 half_position = active_trade['position_size'] / 2
-                capital += half_position * exit_price_tp1 * (1 - fee_rate)
                 
-                # Actualizar la operación a Fase 2
+                # ### MODIFICADO ### Cálculo de P&L de la primera mitad
+                cash_in_part1 = half_position * exit_price_tp1 * (1 - fee_rate)
+                pnl_part1 = cash_in_part1 - active_trade['cost_part1']
+                capital += cash_in_part1
+                
+                # Actualizar la operacion a Fase 2
                 active_trade['position_size'] = half_position
                 active_trade['is_phase_2'] = True
-                sl_breakeven = (active_trade['entry_price'] * (1 + fee_rate)) / (1 - fee_rate)
+                active_trade['pnl_part1'] = pnl_part1
+                # Movemos SL a un breakeven real, considerando comisiones
+                sl_breakeven = active_trade['cost_part2'] / (half_position * (1 - fee_rate))
                 active_trade['sl_price'] = sl_breakeven
-                active_trade['tp2_price'] = current_row['BB_High'] # Objetivo dinámico
+                active_trade['tp2_price'] = current_row['BB_High'] 
 
-                logger.info(f"ALCANZADO TP1 en {current_date}: SL movido a breakeven (${sl_breakeven:.2f})")
+                # ### MODIFICADO ### Logger mejorado
+                logger.info(f"ALCANZADO TP1 en {current_date} a ${exit_price_tp1:,.2f}. \n"
+                            f"    - P&L Parte 1: ${pnl_part1:,.2f}. SL movido a breakeven (${sl_breakeven:.2f})")
+                
+                continue 
 
             # Comprobar Time Stop
             if i - active_trade['entry_index'] >= max_candles_open:
@@ -205,20 +239,20 @@ def run_simulation(
         if not in_trade and current_row['bullish_divergence_signal']:
             
             # #######################################################################
-            # ### INICIO CORRECCIÓN: Filtro de Volumen Reincorporado              ###
+            # ### INICIO CORRECCIoN: Filtro de Volumen Reincorporado              ###
             # #######################################################################
             
-            # La señal en 'i' confirma un pivote que ocurrió 'confirmation_wait_candles' atrás.
+            # La senial en 'i' confirma un pivote que ocurrio 'confirmation_wait_candles' atrás.
             pivot_pos = i - confirmation_wait_candles
             if pivot_pos < 0: continue # Seguridad para el inicio del dataframe
             
-            # 1. Ventana de confirmación: las velas entre el pivote y la señal.
+            # 1. Ventana de confirmacion: las velas entre el pivote y la senial.
             confirmation_window = df.iloc[pivot_pos + 1 : i + 1]
             green_candles = confirmation_window[confirmation_window['Close'] > confirmation_window['Open']]
 
             # 2. Guard Clause: Si no hay velas verdes, el filtro falla.
             if green_candles.empty:
-                logger.warning(f"Senial en {current_date} RECHAZADA: Sin vela verde de confirmación.")
+                logger.warning(f"Senial en {current_date} RECHAZADA: Sin vela verde de confirmacion.")
                 continue
 
             # 3. Ventana de busqueda eficiente para las velas rojas ANTERIORES al pivote.
@@ -236,14 +270,14 @@ def run_simulation(
             volume_threshold = 1.5 * avg_red_volume
             volume_spike_found = any(green_candles['Volume'] > volume_threshold)
 
-            # 6. Guard Clause: Si no hay pico de volumen, el filtro falla.
+            #6. Guard Clause: Si no hay pico de volumen, el filtro falla.
             if not volume_spike_found:
                 logger.warning(f"Senial en {current_date} RECHAZADA por filtro de volumen (Umbral: {volume_threshold:.2f}).")
                 continue
             
             logger.info(f"Senial en {current_date} SUPERO filtro de volumen. Evaluando R/R...")
             # #######################################################################
-            # ### FIN CORRECCIÓN: Filtro de Volumen Reincorporado                 ###
+            # ### FIN CORRECCIoN: Filtro de Volumen Reincorporado                 ###
             # #######################################################################
             
             # Filtro de Calidad (Ratio Riesgo/Beneficio)
@@ -271,23 +305,29 @@ def run_simulation(
             
             ratio_rr_real = recompensa_real_unitaria / riesgo_real_unitario
 
-            # Decisión Final de Entrada
+            # Decision Final de Entrada
             # IGNORANDO FILTRO R/R
             # if ratio_rr_real < rr_min_ratio:
             #     logger.warning(f"Senial en {current_date} RECHAZADA: Ratio R/R ({ratio_rr_real:.2f}) no cumple el minimo de {rr_min_ratio}.")
             #     continue
-            # Calcular Tamaño de Posición
+            # Calcular Tamanio de Posicion
             riesgo_en_usd = capital * risk_per_trade_pct
             tamanio_posicion_btc = riesgo_en_usd / riesgo_real_unitario
-            costo_operacion = tamanio_posicion_btc * precio_entrada * (1 + fee_rate)
-            
-            # Guard Clause: No arriesgar más capital del que se tiene
-            if costo_operacion > capital:
-                logger.warning(f"Senial en {current_date} ignorada: capital insuficiente.")
+            #costo_operacion = tamanio_posicion_btc * precio_entrada * (1 + fee_rate)
+            costo_bruto_posicion = tamanio_posicion_btc * precio_entrada
+            costo_total_con_comision = costo_bruto_posicion * (1 + fee_rate)
+
+            # 2. Guard Clause: Usar el costo TOTAL REAL que saldrá de la cuenta.
+            if costo_total_con_comision > capital:
+                logger.warning(f"Senial en {current_date} ignorada: capital insuficiente "
+                            f"(necesario ${costo_total_con_comision:,.2f} vs. disponible ${capital:,.2f}).")
                 continue
-            # Ejecutar la operación
-            capital -= costo_operacion
+
+            # 3. Ejecutar la operacion: Deducir el costo total real del capital.
+            #    (Nota: Antes deducíamos el costo bruto, ahora deducimos el costo total, lo cual es más preciso)
+            capital -= costo_total_con_comision 
             in_trade = True
+
             active_trade = {
                 'entry_index': i,
                 'entry_price': precio_entrada,
@@ -295,12 +335,17 @@ def run_simulation(
                 'sl_price': precio_sl_teorico,
                 'tp1_price': precio_tp1_teorico,
                 'is_phase_2': False,
+                'total_cost': costo_total_con_comision, 
+                'cost_part1': costo_total_con_comision / 2,
+                'cost_part2': costo_total_con_comision / 2,
             }
-            logger.info(f"NUEVA OPERACION en {current_date} a ${precio_entrada:,.2f} | "
-                        f"SL: ${precio_sl_teorico:,.2f} | TP1: ${precio_tp1_teorico:,.2f} | "
-                        f"RR: {ratio_rr_real:.2f}")
+            logger.info(f"NUEVA OPERACION en {current_date} a ${precio_entrada:,.2f}\n"
+            f"    - Capital en Riesgo (1%): ${riesgo_en_usd:,.2f}\n"
+            f"    - Tamanio Posicion (Bruto): ${costo_bruto_posicion:,.2f}\n"
+            f"    - Costo Total (c/comision): ${costo_total_con_comision:,.2f}\n"
+            f"    - SL: ${precio_sl_teorico:,.2f} | TP1: ${precio_tp1_teorico:,.2f} | RR (TP1): {ratio_rr_real:.2f}")
 
-    # Si la simulación termina con una operación abierta, la cerramos al último precio
+    # Si la simulacion termina con una operacion abierta, la cerramos al último precio
     if in_trade:
         exit_price = df.iloc[-1]['Close']
         capital += active_trade['position_size'] * exit_price * (1 - fee_rate)

@@ -15,7 +15,7 @@ def run_backtesting() -> None:
     max_candles_open = 48     # 48 velas de 1h = 2 días
 
     # --- Parámetros de Indicadores, Señales y Filtros---
-    pivot_lookback_window = 12
+    pivot_lookback_window = 10
     confirmation_wait_candles = 3
     min_distance_between_pivots = 20
     volume_search_window = 100
@@ -27,7 +27,7 @@ def run_backtesting() -> None:
     logger.info("Calculando indicadores...")
     calculate_indicators(df)
     
-    logger.info("Buscando señales de divergencia...")
+    logger.info("Buscando seniales de divergencia...")
     df = find_divergence_signals(df, pivot_lookback_window, confirmation_wait_candles, min_distance_between_pivots)
     
     df.dropna(inplace=True) # Limpiar NaNs después de todos los cálculos
