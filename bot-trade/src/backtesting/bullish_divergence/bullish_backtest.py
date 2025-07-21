@@ -1,6 +1,6 @@
 import logging
 import pandas as pd
-from exchange_functions import calculate_indicators, find_divergence_signals, run_simulation
+from .bullish_backtest_functions import calculate_indicators, find_divergence_signals, precalculate_entry_filters, run_simulation
 from utils import define_logging
 
 logger = logging.getLogger(__name__)
@@ -27,10 +27,19 @@ def run_backtesting() -> None:
     logger.info("Calculando indicadores...")
     calculate_indicators(df)
     
-    logger.info("Buscando seniales de divergencia...")
+    logger.info("Buscando pivotes y seniales de divergencia...")
     df = find_divergence_signals(df, pivot_lookback_window, confirmation_wait_candles, min_distance_between_pivots)
     
-    df.dropna(inplace=True) # Limpiar NaNs después de todos los cálculos
+    logger.info("Pre-calculando filtros de Volumen y R/R para cada señal...")
+    df = precalculate_entry_filters(df, volume_search_window, fee_rate)
+
+    output_filename = "backtest_annotated_data_2021.csv"
+    logger.info(f"Guardando datos anotados en '{output_filename}'...")
+    df.to_csv(output_filename)
+    
+    df.dropna(subset=['RSI', 'BB_Mid', 'ATR'], inplace=True)
+
+    #df.dropna(inplace=True) # Limpiar NaNs después de todos los cálculos
 
     # Correr la simulación principal
     final_capital, trades = run_simulation(
@@ -40,8 +49,6 @@ def run_backtesting() -> None:
         risk_per_trade_pct, 
         rr_min_ratio, 
         max_candles_open,
-        confirmation_wait_candles,
-        volume_search_window,
         )
     
     # --- Reporte Final ---
@@ -57,5 +64,5 @@ def run_backtesting() -> None:
     logger.info("-------------------------------------------")
 
 if __name__ == '__main__':
-    define_logging()
+    define_logging("bullish_backtest_log.txt")
     run_backtesting()

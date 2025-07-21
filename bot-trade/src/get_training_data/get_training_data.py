@@ -1,9 +1,9 @@
 import sys
 import ccxt
-from exchange_functions import get_candles_data, prepare_data
-from validators import assert_output_file_does_not_exist
+from .get_training_data_functions import get_candles_data, prepare_data
+from src.validators import assert_output_file_does_not_exist
 import logging
-from utils import define_logging
+from src.utils import define_logging
 
 logger = logging.getLogger(__name__)
 
@@ -33,5 +33,5 @@ def download_year_data() -> None:
         sys.exit(1)
 
 if __name__ == "__main__":
-    define_logging()
+    define_logging("training_data_log.txt")
     download_year_data()
