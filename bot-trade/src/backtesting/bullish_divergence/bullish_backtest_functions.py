@@ -62,7 +62,7 @@ def find_divergence_signals(df: pd.DataFrame, pivot_lookback_window, confirmatio
         
     return df
 
-def precalculate_entry_filters(df: pd.DataFrame, volume_search_window: int, fee_rate: float):
+def precalculate_entry_filters(df: pd.DataFrame, volume_search_window: int, fee_rate: float, volume_threshold_multiplier: float = 1.5) -> pd.DataFrame:
     """
     PRE-CALCULA los filtros de entrada (Volumen, R/R) para cada señal de divergencia.
     """
@@ -154,7 +154,10 @@ def run_simulation(
                 pnl = (active_trade['position_size'] * exit_price * (1 - fee_rate)) - active_trade['total_cost']
                 capital += active_trade['position_size'] * exit_price * (1 - fee_rate)
                 trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'SL'})
-                logger.warning(f"CIERRE por SL en {current_date} a ${exit_price:,.2f}. P&L: ${pnl:,.2f}. Capital final ${capital:,.2f}")
+                logger.warning(f"CIERRE por SL en {current_date}\n"
+                               f"    - SL: ${exit_price:,.2f}.\n"
+                               f"    - P&L: ${pnl:,.2f}.\n"
+                               f"    - Capital final: ${capital:,.2f}")
                 in_trade = False
                 active_trade = {}
                 continue
@@ -167,7 +170,10 @@ def run_simulation(
                 pnl_part2 = cash_in_part2 - active_trade['cost_part2']
                 capital += cash_in_part2
                 trade_log.append({'entry': active_trade['entry_price'], 'exit': exit_price, 'reason': 'SL@BE'})
-                logger.warning(f"CIERRE por SL en Breakeven en {current_date} a ${exit_price:,.2f}. P&L Parte 2: ${pnl_part2:,.2f}. Capital final ${capital:,.2f}")
+                logger.warning(f"CIERRE por SL en Breakeven en {current_date}\n"
+                               f"    - Breakeven SL: ${exit_price:,.2f}.\n"
+                               f"    - P&L Parte 2: ${pnl_part2:,.2f}.\n"
+                               f"    - Capital final: ${capital:,.2f}")
                 in_trade = False
                 active_trade = {}
                 continue
@@ -210,13 +216,15 @@ def run_simulation(
                 # Movemos SL a un breakeven real, considerando comisiones
                 sl_breakeven = active_trade['cost_part2'] / (half_position * (1 - fee_rate))
                 active_trade['sl_price'] = sl_breakeven
-                active_trade['tp2_price'] = current_row['BB_High'] 
+                active_trade['tp2_price'] = current_row['BB_Upper']  # TP2 es la banda superior de Bollinger
 
                 # ### MODIFICADO ### Logger mejorado
                 logger.info(f"ALCANZADO TP1 en {current_date} a ${exit_price_tp1:,.2f}. \n"
-                            f"    - P&L Parte 1: ${pnl_part1:,.2f}. SL movido a breakeven (${sl_breakeven:.2f})")
-                
-                continue 
+                            f"    - P&L Parte 1: ${pnl_part1:,.2f}.\n"
+                            f"    - SL movido a breakeven ${sl_breakeven:.2f}\n"
+                            f"    - tp2 fijado en ${active_trade['tp2_price']:.2f}.")
+
+                continue
 
             # Comprobar Time Stop
             if i - active_trade['entry_index'] >= max_candles_open:
@@ -265,18 +273,19 @@ def run_simulation(
             active_trade = {
                 'entry_index': i,
                 'entry_price': precio_entrada,
-                'position_size': tamanio_posicion_btc,
+                'position_size': tamanio_posicion_btc, #btc
                 'sl_price': precio_sl_teorico,
                 'tp1_price': precio_tp1_teorico,
                 'is_phase_2': False,
-                'total_cost': costo_total_con_comision, 
+                'total_cost': costo_total_con_comision, #usdt
                 'cost_part1': costo_total_con_comision / 2,
                 'cost_part2': costo_total_con_comision / 2,
             }
 
             rr_from_df = current_row['risk_reward_ratio']
 
-            logger.info(f"NUEVA OPERACION en {current_date} a ${precio_entrada:,.2f}\n"
+            logger.info(f"NUEVA OPERACION en {current_date}\n"
+            f"    - Precio Entrada: ${precio_entrada:,.2f}\n"
             f"    - Capital en Riesgo (1%): ${riesgo_en_usd:,.2f}\n"
             f"    - Tamanio Posicion (Bruto): ${costo_bruto_posicion:,.2f}\n"
             f"    - Costo Total (c/comision): ${costo_total_con_comision:,.2f}\n"

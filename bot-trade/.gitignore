@@ -2,3 +2,5 @@
 /.env
 /*.csv
 /*strategy.md
+__pycache__/
+*.pyc
