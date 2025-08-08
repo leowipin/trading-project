@@ -1,16 +1,16 @@
+import LogInForm from "../../components/forms/LogInForm"
+
 const LogInPage = () => {
 
     return(
-        <div className="min-h-screen flow-root">
-            
-            <main className="flex justify-center items-center flex-col min-h-screen">
-                <h1 className="my-4">INICIAR SESION</h1>
-                <section className="flex justify-center h-64 w-84 border-2
-                rounded-lg mb-4">
-                    
+        <div className="flex justify-center items-center min-h-screen p-4"> 
+            <main className="flex flex-col border-2 rounded-md gap-4 w-full sm:w-2/3 
+            md:w-1/2 lg:w-1/3 p-4 bg-amber-600 dark:bg-amber-950">
+                <h1 className="flex justify-center text-2xl">Inicar Sesión</h1>
+                <section className="">
+                    <LogInForm></LogInForm>
                 </section>
             </main>
-            
         </div>
     )
 

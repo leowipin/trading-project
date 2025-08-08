@@ -11,9 +11,8 @@ def calculate_rsi(df: pd.DataFrame, period: int = 14) -> None:
     df['RSI'] = 100 - (100 / (1 + rs))
 
 def calculate_bollinger_bands(df: pd.DataFrame, period: int = 20, std_dev: int = 2) -> None:
-    df['BB_Mid'] = df['Close'].rolling(window=period).mean()
-    df['BB_Upper'] = df['BB_Mid'] + (df['Close'].rolling(window=period).std() * std_dev)
-    df['BB_Lower'] = df['BB_Mid'] - (df['Close'].rolling(window=period).std() * std_dev)
+    df['BB_Upper'] = df['BB_Mid'] + (df['Close'].rolling(window=period).std(ddof=0) * std_dev)
+    df['BB_Lower'] = df['BB_Mid'] - (df['Close'].rolling(window=period).std(ddof=0) * std_dev)
 
 def calculate_atr(df: pd.DataFrame, period: int = 14) -> None:
     high_low = df['High'] - df['Low']

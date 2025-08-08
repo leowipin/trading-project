@@ -12,9 +12,9 @@ def download_year_data() -> None:
         'enableRateLimit': True,
     })
     symbol:str = "BTC/USDT"
-    timeframe:str = "15m"
+    timeframe:str = "1h"
     limit:int = 1000
-    start_year:int = 2020
+    start_year:int = 2021
     file_name: str = f"binance_{symbol.replace('/', '')}_{timeframe}_{start_year}.csv"
     try:
         assert_output_file_does_not_exist(file_name)

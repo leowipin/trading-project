@@ -1,1 +1,1 @@
-export interface LogInFormProps extends React.HtmlHTMLAttributes<HTMLFormElement>{}
+export interface LogInFormProps extends React.FormHTMLAttributes<HTMLFormElement>{}

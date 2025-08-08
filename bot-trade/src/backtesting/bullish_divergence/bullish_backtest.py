@@ -1,9 +1,7 @@
 import logging
 import pandas as pd
-from src.backtesting.utils_backtesting import calculate_multiplier
 from .bullish_backtest_functions import calculate_indicators, find_divergence_signals, precalculate_entry_filters, run_simulation
 from src.utils import define_logging
-import sys
 
 logger = logging.getLogger(__name__)
 
